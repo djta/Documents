@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 3 Spring 2006</h2>
+<ol>
+<h1>Part I - 32 points</h1>
+
+
+<li> 7 points <br>
+Explain how you use hash functions and public key cryptography to generate a digital signature for a document.
+
+</li><li> 6 points <br> You need to create a system where you need to
+validate a user's password. How can you create a publicly readable
+password file? Software that verifies a password cannot employ any keys
+in validating a password against data in the file. Explain what is
+contained in the file and how the software validates the password.
+(Think about McCarthy's puzzle.)
+</li><li> 7 points <br> How can Bob authenticate Alice if he has her
+digital certificate? Explain the steps. (N.B.: the question is not
+asking how Bob authenticates Alice's certificate.)
+</li><li> 6 points <br>
+What problem does the Diffie-Hellman algorithm solve? (Don't explain or cite the algorithm/formula.)
+
+</li><li> 6 points <br>
+What is tunneling and why is it crucial to the implementation of a VPN?
+
+<h1>Part II - 68 points - 4 points each</h1>
+For each statement, select the most appropriate answer.
+
+</li><li> The biggest problem with symmetric cryptography is:
+        <br>(a) the fact that symmetric algorithms are more easily cracked than public key algorithms.
+        <br>(b) the fact that symmetric algorithms are much slower than public key algorithms.
+        <br>(c) key exchange.
+        <br>(d) man-in-the-middle attacks.
+
+</li><li> A rotor machine implements a:
+        <br>(a) monoalphabetic substitution cipher.
+        <br>(b) polyalphabetic substitution cipher.
+        <br>(c) transposition cipher.
+        <br>(d) combined substitution-transposition cipher.
+
+</li><li> A disk drive controller that always returns random values in the bit-two position of data exhibits a:
+        <br>(a) permanent, fail-silent failure.
+        <br>(b) permanent, Byzantine failure.
+        <br>(c) transient, fail-silent failure.
+        <br>(d) transient, Byzantine failure.
+
+</li><li> Compared to two-phase locking, strict two-phase locking avoids the problem of:
+        <br>(a) cascading aborts.
+        <br>(b) deadlocks.
+        <br>(c) having to use a lock manager.
+        <br>(d) suboptimal concurrency.
+
+</li><li> Which of the following is not an example of two-factor authentication?
+        <br>(a) Your iris scan and your password.
+        <br>(b) Your iris scan and your fingerprint.
+        <br>(c) Your access card and your password.
+        <br>(d) Your access card and your fingerprint.
+
+</li><li> A Kerberos ticket (sealed envelope) contains the:
+        <br>(a) session key for communicating with the service, encrypted with your key.
+        <br>(b) session key for communicating with the service, encrypted with the service's key.
+        <br>(c) service's key, so you can encrypt data for the service, encrypted with your key.
+        <br>(d) session key for communicating with the service, encrypted with Kerberos' key.
+
+</li><li> Authentication using Gestalt psychology relies on:
+        <br>(a) anticipating the answers that a user will provide.
+        <br>(b) masquerading as another system and convincing the user that it is the legitimate one.
+        <br>(c) asking a series of questions, each time increasing the confidence of authentication.
+        <br>(d) people being better than computers at identifying incomplete patterns.
+
+</li><li> A SYN fiooding attack relies on:
+        <br>(a) saturating a network with packets so there is no more capacity for legitimate data.
+        <br>(b) Flooding a machine with network packets so that it is fully congested by processing them.
+        <br>(c) sending an IP datagram that's larger than allowed to cause a buffer over?ow in the kernel.
+        <br>(d) restricting a machine's ability to accept new TCP connections.
+
+</li><li> A packet filter cannot guard against the following:
+        <br>(a) packets from the external network that are masqueraded to look like they are from the internal network.
+        <br>(b) RIP (Router Information Protocol) packets being sent to the LAN.
+        <br>(c) attempts to create a buffer overflow attack on the mail server.
+        <br>(d) access to the FTP server from everywhere but one range of IP addresses.
+
+</li><li> A system or service that is set up specifically to trap intruders is a:
+        <br>(a) demilitarized zone.
+        <br>(b) honeypot.
+        <br>(c) denial of service attack.
+        <br>(d) ping of death.
+
+</li><li> A proprietary encryption algorithm likely to be more secure
+than a standard algorithm like DES because the details of its
+implementation are not revealed. <br>(a) True
+        <br>(b) False
+
+</li><li> For a system that exhibits Byzantine faults to be k-fault tolerant, it needs to have:
+        <br>(a) k+1 components.
+        <br>(b) 2<sup>k</sup>+1 components.
+        <br>(c) 2(k+1) components.
+        <br>(d) k<sup>2</sup> components.
+
+</li><li> A movie render farm primarily relies on:
+        <br>(a) cascading failover.
+        <br>(b) active failover.
+        <br>(c) workload distribution.
+        <br>(d) distributed message passing.
+
+</li><li> Cascading failover handles the case where:
+        <br>(a) one application failing over to another system leads to related applications doing the same.
+        <br>(b) a failure in one system leads to failures in other systems.
+        <br>(c) an application migrates back to the original machine after a failover.
+        <br>(d) a backup system that took over running some applications dies.
+
+</li><li> Microsoft Authenticode is best described as:
+        <br>(a) a run-time component that validates access to system resources.
+        <br>(b) an intermediate language that is verified before being compiled to native code.
+        <br>(c) a digital signature on a software file.
+        <br>(d) an encrypted format for software distribution.
+
+</li><li> A storage area network (SAN) is a:
+        <br>(a) network of file servers.
+        <br>(b) clustered collection of computers acting as one file server.
+        <br>(c) high-speed machine-machine interconnect that bypasses a conventional IP network.
+        <br>(d) collection of storage units that appear to computers as one or more disks.
+
+</li><li> A null cipher is:
+        <br>(a) a message embedded within another message, formed from pieces of the that message.
+        <br>(b) an encryption with no key.
+        <br>(c) a cryptographic system built around a null function.
+        <br>(d) any cipher where the size of the ciphertext is never greater than the size of the plaintext.
+
+</li></ol>
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

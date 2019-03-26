@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+</head><body>
+<h1>Distributed Systems</h1>
+<h2> Exam 2 Fall 2007</h2>
+<ol>
+<h1>Part I - 36 Points</h1>
+
+<li> 5 points<br>
+How does a replicated Coda server discover that it has out-of-date files?
+</li>
+
+<li> 9 points <br>
+Suppose the round-trip delay of sending a message to a time server and getting a response back is <i>R</i>.
+The time value returned by the server is <i>T<sub>S</sub></i>.
+The time at the client when it sent the request is <i>T<sub>C</sub></i>. 
+<br>
+(a) Express the formula for the new time on the client, <i>T</i>, using
+Cristian's algorithm.
+<blockquote>
+        <i>T</i> = 
+</blockquote>
+
+(b) If the best-case round-trip delay to the server is <i>T<sub>B</sub></i> and the error of the clock
+on the server is &plusmn;<i>E<sub>S</sub></i>. What is the error on the client after it synchronizes its clock with the server?
+<blockquote>
+        <i>E</i> = &plusmn;
+</blockquote>
+</li>
+
+<li> 5 points <br>
+Vector timestamps assume that every participating process knows the
+group membership from the start. A new process cannot just jump in
+and send a message to anyone in the group. Propose a modified
+algorithm that does not require <i>a priori</i> knowledge of the group.
+Specifically, explain how a timestamp is defined and what happens
+when a message arrives from a previously unseen process. [Hint:
+don't use a central coordinator.]
+</li>
+
+<li> 7 points <br>
+(a) Prove that a cryptographic hash function, no matter how good, will always be vulnerable to collisions.
+<br>
+(b) Why is this not a huge concern?
+</li>
+
+<li> 5 points <br>
+What is the purpose of the client modification log in Coda?
+</li>
+
+<li> 10 points <br>
+(a) How can Alice generate a digital signature for a message that anybody can validate?
+<br>
+(b) How can Alice generate a digital signature for a message that only Bob can validate?
+</li>
+
+<li> 8 points <br>
+(a) How can Alice pass a symmetric key securely to Bob using only symmetric cryptography and a trusted third party (Trent)?
+<br>
+(b) How can Alice pass a symmetric key securely to Bob using public key cryptography?
+</li>
+
+<h1>
+PART II - 51 points </h1>
+<p>
+For each statement, select the <i>most</i> appropriate answer.
+</p>
+
+<li> Which file system is best suited for concurrent file sharing:
+        <br>(a) NFS
+        <br>(b) AFS
+        <br>(c) Coda
+        <br>(d) CIFS
+
+</li><li> An <i>oplock</i>, or <i>opportunistic lock</i>, in CIFS is:
+        <br>(a) Requested by a client to ensure that it gets exclusive access to a region of the file.
+        <br>(b) Granted by the server and tells the client how it may cache file data.
+        <br>(c) Requested by the client to share a region of a file with another client.
+        <br>(d)
+Requested by the client to grab an exclusive lock on a file when the
+opportunity arises, even if the process has to wait to get the lock.
+</li><li> Berkeley's xFS project demonstrates that:
+        <br>(a) A distributed file system can be built on a serverless peer-to-peer infrastructure.
+        <br>(b) A highly scalable filesystem can be designed through distributed caching.
+        <br>(c) A fault-tolerant file system can be built using replicated servers.
+        <br>(d) A client can relay file system requests through other clients rather than contacting the server directly.
+
+</li><li> A two-phase commit protocol implements:
+        <br>(a) Atomic multicast.
+        <br>(b) Reliable multicast.
+        <br>(c) Unreliable multicast.
+        <br>(d) Disjoint multicast.
+
+</li><li> Events on process P<sub>1</sub> have the following Lamport timestamps:
+<i>a: 1, b: 3, c: 4</i>.
+Events on process P<sub>2</sub> have the following Lamport timestamps:
+<i>d: 1, e: 2, f: 5</i>.
+Which set of events is definitely causally related? Choose the best answer.
+        <br>(a) <i>a, b, c</i>
+        <br>(b) <i>a, e, b, c</i>
+        <br>(c) <i>d, e, b, c, f</i>
+        <br>(d) It is impossible to tell whether any of the events are causally related.
+
+</li><li> A linear compensating function:
+        <br>(a) Speeds up or slows down the rate at which a clock ticks.
+        <br>(b) Adjusts a clock in steadily decreasing intervals until it asymptotically approaches the correct time.
+        <br>(c) Adds a constant offset to the value of the system clock.
+        <br>(d) Compensates for the irregularities of a quartz oscillator and ensures that the system clock ticks at a constant rate.
+
+</li><li> A synchronization subnet is:
+        <br>(a) A dedicated subnet on an IP network that is used for synchronizing processes.
+        <br>(b) A dedicated subnet on an IP network that is used only for time synchronization.
+        <br>(c) Any subset of the synchronization network.
+        <br>(d) The set of all systems that are time servers.
+
+</li><li> Which mutual exclusion algorithm requires the least amount of network traffic for groups of over 1,000 machines:
+        <br>(a) Centralized
+        <br>(b) Token Ring
+        <br>(c) Ricart &amp; Agrawala
+        <br>(d) Lamport's
+
+</li><li> IP multicast provides the following message ordering:
+        <br>(a) Totally-ordered
+        <br>(b) Causally-ordered
+        <br>(c) Sync-ordered
+        <br>(d) Unordered
+
+</li><li> With entry consistency:
+        <br>(a) Only the data associated with the synchronization object is acquired and made consistent at the acquirer.
+        <br>(b) All shared data is acquired and made consistent at the acquirer.
+        <br>(c) Any shared data is made consistent at the acquirer after completing the <i>release</i> operation.
+        <br>(d) Any shared data is made consistent at all cached nodes immediately after it is modified.
+
+</li><li> Which of the following is not a substitution cipher
+        <br>(a) Alberti
+        <br>(b) Vigenère
+        <br>(c) Staff
+        <br>(d) Rotor machine
+
+</li><li> The Diffie-Hellman algorithm is best described as one that:
+        <br>(a) Uses public key cryptography to allow a user to send a session key securely to another user.
+        <br>(b) Uses public key cryptography to transmit a session key and symmetric cryptography to encrypt the conversation.
+        <br>(c) Uses symmetric cryptography to establish a session key between two parties.
+        <br>(d) Allows two users to derive the same key.
+
+</li><li> Frequency analysis is used to:
+        <br>(a) Identify the scrambling sequence in a transposition cipher.
+        <br>(b) Identify the substitution alphabet in a substitution cipher.
+        <br>(c) Identify the key in a symmetric encryption algorithm.
+        <br>(d) Identify the key in a public-key encryption algorithm.
+
+</li><li> The time on a client is 11:18:00. The time on the server is
+11:21:00. Using the Berkeley algorithm, the client's clock will be
+adjusted to: <br>(a) 11:18:00
+        <br>(b) 11:19:30
+        <br>(c) 11:21:00
+        <br>(d) 11:22:30
+
+</li><li> <i>False sharing</i> in a distributed shared memory system refers to :
+        <br>(a) Unrelated data that is used by two processors being mapped to the same memory page.
+        <br>(b) Creating the illusion of a shared page by moving it between processors on demand.
+        <br>(c) The directory entry for a page showing multiple copysets that no longer hold the page.
+        <br>(d) Extraneous pages being cached on the system.
+
+</li><li>  Which vector timestamp is concurrent with (2, 1, 3)? 
+        <br>(a) (2, 1, 4)
+        <br>(b) (3, 2, 4)
+        <br>(c) (1, 0, 2)
+        <br>(d) (1, 2, 3)
+</li>
+
+</ol>
+
+<p>
+<hr>
+<p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

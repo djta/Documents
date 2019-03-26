@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 3 Spring 2007</h2>
+<ol>
+<h1>Part I - 24 points</h1>
+
+<li> 6 points <br>
+(a) How is a nonce used for authentication in public-key cryptography? Give a simple example of Alice authenticating Bob. <br>
+(b) How is a nonce used for authentication in symmetric cryptography? Give a simple example of Alice authenticating Bob. <br>
+
+</li><li> 6 points <br>
+What is the purpose of a ticket (sealed envelope) in Kerberos?
+
+</li><li> 6 points <br>
+How do you use an X.509 digital certificate to validate signed software?
+
+</li><li> 6 points <br>
+Northrup Grumman developed a mobile electronic fingerprinting system
+for use by the UK police. A search of 6.6 million prints takes under
+five minutes. An index into a database of 6.6 million records generally
+takes only a few milliseconds. Why does the fingerprint search take so
+long?
+<h1>PART II - 76 points </h1>
+For each statement, select the most appropriate answer.
+
+</li><li>  Strict two-phase locking differs from two-phase locking in that it:
+        <br> (a) Relies on atomic multicasts.
+        <br> (b) Ensures that other transactions do not have to abort because they read data that was modified.
+        <br> (c) Has a shrinking phase that does not start until the growing phase is complete.
+        <br> (d) Requires mandatory locks rather than advisory locks.
+
+</li><li>  Optimistic concurrency control schemes do not assume:
+        <br> (a) All data that may potentially be used by a transaction should be locked.
+        <br> (b) Transactions are likely to complete and not abort from accessing resources out of order.
+        <br> (c) Locking is not necessary because the chance of transactions accessing the same data is low.
+        <br>
+(d) It is more efficient to put effort into restoring data from aborted
+transactions than to keep it from getting corrupt in the first place. </li><li>  TCP/IP achieves fault tolerance through:
+        <br> (a) Information redundancy.
+        <br> (b) Time redundancy.
+        <br> (c) Physical redundancy.
+        <br> (d) Triple modular redundancy.
+        
+</li><li>  A k-fault-tolerant system (one that withstands k faults) with fail-silent faults requires:
+        <br> (a) k+1 components.
+        <br> (b) 2k+1 components.
+        <br> (c) k<sup>2</sup> components.
+        <br> (d) k<sup>2</sup>+1 components.
+        
+</li><li>  A k-fault-tolerant system (one that withstands k faults) with Byzantine faults requires:
+        <br> (a) k+1 components.
+        <br> (b) 2k+1 components.
+        <br> (c) k<sup>2</sup> components.
+        <br> (d) k<sup>2</sup>+1 components.
+        
+</li><li>  A challenge/response authentication system uses:
+        <br> (a) Your PIN, a seed/password on the authenticator device, and a value from the remote system.
+        <br> (b) Your PIN, a seed/password on the authenticator device, and the time of day.
+        <br> (c) Your PIN and a seed/password on the authenticator device.
+        <br> (d) A seed/password on the authenticator device and the time of day.
+        
+</li><li>  An X.509 digital certificate contains:
+        <br> (a) Your public key and your encrypted private key.
+        <br> (b) Your public key and the certificate issuer's public key.
+        <br> (c) Your public key and your digital signature.
+        <br> (d) Your public key and the certificate issuer's digital signature.
+        
+</li><li>  Secure Sockets Layer (SSL or TLS) is an example of:
+        <br> (a) A public-key cryptosystem.
+        <br> (b) A symmetric cryptosystem.
+        <br> (c) A hybrid cryptosystem.
+        <br> (d) A restricted cryptosystem.
+        
+</li><li>  A null cipher is:
+        <br> (a) A cipher that does no encryption, used for testing protocols.
+        <br> (b) A cipher that uses an empty key, essentially a restricted cipher.
+        <br> (c) A technique for transposing data to make it unintelligible.
+        <br> (d) A technique for hiding a message inside irrelevant data.
+        
+</li><li>  Extracting a message that is hidden with chaffing and winnowing requires:
+        <br> (a) Being able to validate a signature on a message.
+        <br> (b) A brute force attack to extract the key.
+        <br> (c) Figuring out the pattern of good and bad messages.
+        <br> (d) Being able to decrypt the message.
+        
+</li><li>  To allow traffic to your web server (port 80) but not your mail server (port 25), you need:
+        <br> (a) A stateless packet filter.
+        <br> (b) A stateful packet filter.
+        <br> (c) An application proxy.
+        <br> (d) A screened subnet.
+        
+</li><li>  The following machines belong inside a DMZ:
+        <br> (a) Systems offering services to the external network.
+        <br> (b) Systems offering services to the internal network.
+        <br> (c) User machines inside an organization.
+        <br> (d) Secure systems inside an organization, such as logging servers and backup servers.
+        
+</li><li>  Getting a password by masquerading as the system administrator is an example of:
+        <br> (a) A dictionary attack.
+        <br> (b) A Trojan horse.
+        <br> (c) Social engineering.
+        <br> (d) Brute-force attack.
+        
+</li><li>  What can a personal firewall block that a network firewall cannot?
+        <br> (a) Packets that are masqueraded to look as if they are from the internal network.
+        <br> (b) Corrupt software making network connections from your computer.
+        <br> (c) Attempts to access the mail server on your system.
+        <br> (d) Users on your system surfing the web.
+        
+</li><li>  A tunnel relies on:
+        <br> (a) Packet encapsulation.
+        <br> (b) Address/port translation.
+        <br> (c) Encryption of the packet header.
+        <br> (d) Encryption of the entire packet.
+        
+</li><li>  Limiting the rate of incoming TCP packets per source address requires:
+        <br> (a) A stateless packet filter.
+        <br> (b) A stateful packet filter.
+        <br> (c) An application proxy.
+        <br> (d) A screened subnet.
+        
+</li><li>  SYN flooding is used to:
+        <br> (a) Allow a TCP session to be hijacked.
+        <br> (b) Cause a machine to stop responding to the network.
+        <br> (c) Cause a machine to stop accepting TCP connections.
+        <br> (d) Cause a machine to crash.
+        
+</li><li>  Which security approach is not practical under Microsoft Windows Server 2003?
+        <br> (a) Authentication.
+        <br> (b) Authorization.
+        <br> (c) Accounting.
+        <br> (d) Auditing.
+        
+</li><li>  The purpose of a sandbox is to:
+        <br> (a) Validate code before executing it.
+        <br> (b) Ensure that only authenticated users have access to code within the sandbox.
+        <br> (c) Provide an interpreted environment for executing code.
+        <br> (d) Provide a restricted environment for code execution.
+        
+
+</li></ol>
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 3 Spring 2008</h2>
+<ol>
+<h1>Part I - 30 Points</h1>
+
+<li> 6 points<br>
+What are the three factors of authentication?
+</li>
+
+<li> 6 points <br>
+When you request a service via Kerberos, you are presented with a
+ticket. What does this ticket contain and how is it used?
+</li>
+
+<li> 6 points <br>
+How would you check that a digital certificate is valid? Specifically,
+explain how you ensure that it (a) has not been modified and (b)
+is really issued by the party that claims to have created it?
+</li>
+
+<li> 6 points <br>
+How does the steganographic technique of chaffing and winnowing use
+digital signatures?
+</li>
+
+<li> 6 points <br>
+Is the following statement true or false? Explain and defend your position.
+<br>
+<em>
+Application proxies were once useful but have been rendered obsolete
+with the introduction of SPI (stateful packet inspection) firewalls as
+successors to packet filters.
+</em>
+</li>
+
+<h1>
+PART II - 28 points - 4 points each </h1>
+<p>
+Define each of the following terms.
+You may omit one question. Please clearly indicate the question you choose to omit.
+</p>
+<li> Worm </li>
+<li> Rootkit  </li>
+<li> DMZ </li>
+<li> Tunnel </li>
+<li> Heartbeat network </li>
+<li> Warm failover </li>
+<li> Distributed lock manager (DLM) </li>
+<li> Cascading failover </li>
+
+<h1>
+PART II - 42 points - 3 points each </h1>
+<p>
+For each statement, select the most appropriate answer.
+You may omit one question. Please clearly indicate the question you choose to omit.
+</p>
+
+<li> MS-CHAP, Microsoft's Challenge Handshake Authentication Protocol is most similar to:
+        <br>(a) Challenge-Response.
+        <br>(b) RSA SecurID.
+        <br>(c) Password Authentication Protocol (PAP).
+        <br>(d) SKID.
+
+</li><li> Which of these authentication protocols is most vulnerable on insecure networks?
+        <br>(a) CHAP (challenge handshake authentication protocol).
+        <br>(b) PAP (password authentication protocol).
+        <br>(c) SecurID (SASL).
+        <br>(d) Kerberos.
+
+</li><li> A digital certificate contains:
+        <br>(a) a signed public key.
+        <br>(b) a signed public key and encrypted private key.
+        <br>(c) an encrypted private key.
+        <br>(d) a signed private key.
+
+</li><li> How does SSL establish an encryption key between the client and server?
+        <br>(a) The client picks the key, encrypts it with the server's public key, and sends it to the server.
+        <br>(b)
+Each machine uses the other's public key: the client encrypts data with
+the server's public key and the server encrypts data with the client's
+public key. <br>(c) Diffie-Hellman key exchange allows the client and server to come up with a common key.
+        <br>(d) A trusted third party employing the wide-mouth frog protocol is used.
+
+</li><li> CAPTCHA relies on
+        <br>(a) presenting the user with a series of questions.
+        <br>(b) a combination of biometrics and public key cryptography.
+        <br>(c) having the user prove that he/she has the correct key.
+        <br>(d) human pattern recognition.
+
+</li><li> Which authentication scheme does not use a nonce for authentication?
+        <br>(a) Challenge-Response.
+        <br>(b) SKID.
+        <br>(c) Kerberos.
+        <br>(d) SSL.
+
+</li><li> SecurID is vulnerable to:
+        <br>(a) man in the middle attacks.
+        <br>(b) dictionary attacks.
+        <br>(c) known plaintext attacks.
+        <br>(d) replay attacks.
+
+</li><li> A packet filtering firewall cannot:
+        <br>(a) block packets from the Internet whose source address is masqueraded to appear as if it is from your internal network.
+        <br>(b) allow TCP/IP packets to port 25 on your mail server and disallow all other packets.
+        <br>(c) block attempts to create a buffer overflow attack to the mail server.
+        <br>(d) block all UDP/IP packets from the network 128.6.0.0/16.
+
+</li><li> TCP/IP uses the following for fault tolerance:
+        <br>(a) heartbeat network.
+        <br>(b) information redundancy.
+        <br>(c) time  redundancy.
+        <br>(d) physical redundancy.
+
+</li><li> RAID 5 (disk parity) uses the following for fault tolerance:
+        <br>(a) heartbeat network.
+        <br>(b) information redundancy.
+        <br>(c) time  redundancy.
+        <br>(d) physical redundancy.
+
+</li><li> RAID 1 (disk mirroring) uses the following for fault tolerance:
+        <br>(a) heartbeat network.
+        <br>(b) information redundancy.
+        <br>(c) time  redundancy.
+        <br>(d) physical redundancy.
+
+</li><li> SYN flooding will cause a machine to:
+        <br>(a) go out of service.
+        <br>(b) not be able to accept any more incoming IP packets.
+        <br>(c) not be able to accept any more TCP/IP connections.
+        <br>(d) not be able to accept any more TCP/IP connections on a specific port.
+
+</li><li> The two army problem guarantees that two users with an unreliable communication stream between them can achieve agreement:
+        <br>(a) by sending a message and receiving an acknowledgement.
+        <br>(b) by a three-way handshake: send a message, receive an acknowledgement, and then acknowledge that acknowledgement.
+        <br>(c) by applying error-correcting codes to the message.
+        <br>(d) never.
+
+</li><li> An hypervisor would not:
+        <br>(a) allow multiple operating systems to run concurrently on one processor.
+        <br>(b) detect the installation of a rootkit within the operating system.
+        <br>(c) control the processor's memory management unit (MMU).
+        <br>(d) intercept privileged processor instructions that would normally go to the operating system.
+
+</li><li> The main difference between a grid and a conventional HPC cluster is that a grid:
+        <br>(a) offers fault tolerance as well as high performance.
+        <br>(b) requires all machines to have the same operating system.
+        <br>(c) can be thought of as a virtual cluster instead of using machines dedicated to the cluster.
+        <br>(d) does not require processes to communicate with each other.
+</li></ol>
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

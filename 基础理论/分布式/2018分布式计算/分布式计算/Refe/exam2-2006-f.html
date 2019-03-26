@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2> Exam 2 Fall 2006 </h2> 
+
+<ol>
+<h1>Part I - 28 Points</h1>
+<li> 5 points<br>
+State an advantage of sequential (Unix) file access semantics over session semantics in a distributed file system.
+
+</li><li> 5 points <br>
+What happens when an exclusive oplock on a client is broken under CIFS?
+
+</li><li>5 points<br>
+Why does AFS usually impose less traffic on a server than NFS?
+
+</li><li>5 points<br>
+Why might a file <i>open</i> operation be more expensive under Coda than under AFS?
+
+</li><li>8 points<br>
+The clock in the clock tower in the town of Chronos broke. It was
+repaired but now the clock needs to be set. A train leaves for the
+nearest town, Temporis, 100 miles away. It returns 4½ hours later with
+a report that the time, according to the clock tower in Temporis, is
+4:05.
+<br>
+(a) To what value should the time be set on the clock tower?
+<br>
+(b) The maximum speed that the train can travel is 50 mph. What is the error of the clock? 
+
+<h1>Part II - 72 Points</h1>
+
+For each statement, select the <i>most</i> appropriate answer.
+
+</li><li> Multiprocessor systems are characterized by:
+        <br>(a) shared memory.
+        <br>(b) a high-speed processor-to-processor interconnect.
+        <br>(c) a crossbar switch.
+        <br>(d) All of the above.
+
+</li><li> Which file systems implement a remote access model?
+        <br>(a) NFS only.
+        <br>(b) NFS and SMB.
+        <br>(c) NFS , Coda, and SMB.
+        <br>(d) NFS , Coda, and AFS.
+</li><li> The Chandy-Misra-Haas deadlock probing algorithm:
+        <br>(a) sends a message to see if it comes back to the originator.
+        <br>(b) sends queries to systems to see if they are deadlocked.
+        <br>(c) allows a server to identify which process generated the deadlock.
+        <br>(d) forces a timestamp ordering of resource allocation that prevents deadlocks.
+</li><li> False deadlock can be fixed by:
+        <br>(a) reliable message transmission.
+        <br>(b) proper message ordering.
+        <br>(c) atomic multicasts.
+        <br>(d) avoiding the use of a central server.
+</li><li> An AFS callback for a file causes:
+        <br>(a) clients to invalidate that file in their cache.
+        <br>(b) clients to write any outstanding modifications out to the server.
+        <br>(c) the server to propagate updates of the file to clients.
+        <br>(d) clients to release any locks on the file.
+</li><li> Event <i>a</i> has a Lamport timestamp of 4. Event <i>b</i> has a Lamport timestamp of 8. What can we tell about events <i>a</i> and <i>b</i>?
+        <br>(a) Events a and b are causally related.
+        <br>(b) Events a and b are concurrent. 
+        <br>(c) Event a happened before event b.
+        <br>(d) If events a and b are causally related, then event a happened before event b.
+</li><li> Which event is concurrent with the vector timestamp (2, 4, 6)?
+        <br>(a) (3, 5, 7)
+        <br>(b) (1, 3, 5)
+        <br>(c) (1, 4, 6)
+        <br>(d) (1, 4, 7)
+</li><li> A client has a time of 5:05 and a server has a time of 5:25. Using the Berkeley algorithm, the client's clock will be set to:
+        <br>(a) 5:15
+        <br>(b) 5:20
+        <br>(c) 5:25
+        <br>(d) 5:30
+</li><li> Which offers the most fault-tolerant message delivery? 
+        <br>(a) Atomic multicast.
+        <br>(b) Totally ordered reliable multicast.
+        <br>(c) Causally-ordered reliable multicast.
+        <br>(d) Hardware multicast.
+</li><li> When we had to send an IP packet over an ethernet network, we
+found the corresponding ethernet address via the Address Resolution
+Protocol (ARP). How do we find the ethernet address that corresponds to
+a particular IP multicast address?? <br>(a) All IP multicast packets use the same reserved ethernet address.
+        <br>(b) ARP is also responsible for handling multicast addresses.
+        <br>(c) By mapping some of the bits of an IP multicast address onto an ethernet address.
+        <br>(d) By mapping all of the bits of an IP multicast address onto an ethernet address.
+</li><li> How does IP multicast achieve reliable packet delivery?
+        <br>(a) It doesn't.
+        <br>(b) Via best-effort multicast.
+        <br>(c) Via atomic multicast.
+        <br>(d) Via IGMP (Internet Group Management Protocol).
+</li><li> A copyset is used:
+        <br>(a) in a DSM system that employs page caching.
+        <br>(b) in a DSM system as an alternative to page caching.
+        <br>(c) to implement lazy release consistency.
+        <br>(d) to implement entry consistency.
+</li><li> An ethernet card may support all of the following mechanisms for multicasting except:
+        <br>(a) filtering packets based on a hash of the multicast address.
+        <br>(b) searching through a small table for a matching ethernet addresses.
+        <br>(c) searching through a larger table of ethernet addresses in main memory.
+        <br>(d) accepting all multicast packets via multicast promiscuous mode.
+</li><li> If a frequency analysis of ciphertext reveals a statistical
+equivalence to the corresponding frequencies of plain English text, we
+can guess that the cipher is: <br>(a) a monoalphabetic substitution cipher.
+        <br>(b) a polyalphabetic substitution cipher.
+        <br>(c) a transposition cipher.
+        <br>(d) a rotor machine.
+</li><li> A rotor machine implements:
+        <br>(a) a monoalphabetic substitution cipher.
+        <br>(b) a polyalphabetic substitution cipher.
+        <br>(c) a transposition cipher.
+        <br>(d) a one-time pad.
+</li><li> False sharing in a DSM system refers to:
+        <br>(a) an unwanted page being cached on another system.
+        <br>(b) unrelated data being resident on the same page.
+        <br>(c) invalid data in the directory, leading the system to falsely believe the page is shared.
+        <br>(d) two versions of the same page being present on one system.
+</li><li> A bully election algorithm:
+        <br>(a) picks the first process to respond to an election request.
+        <br>(b) relies on majority vote to pick the winning process.
+        <br>(c) assigns the role of coordinator to the process holding the token at the time of election.
+        <br>(d) picks the process with the largest ID.
+</li><li> Which mutual exclusion algorithm works when the membership of the group is unknown?
+        <br>(a) Centralized.
+        <br>(b) Ricart-Agrawala.
+        <br>(c) Lamport.
+        <br>(d) Token Ring.
+</li><li> Weak consistency models offer an advantage over sequential consistency because:
+        <br>(a) memory synchronization does not have to occur with each memory operation.
+        <br>(b) caching may be used.
+        <br>(c) only the needed data needs to be shared, not the entire memory system.
+        <br>(d) they ensure that each write operation invalidates or updates all cached copies before the next instruction is executed.
+
+</li></ol>
+
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

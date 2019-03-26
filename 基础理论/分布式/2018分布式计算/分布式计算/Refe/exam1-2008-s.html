@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 1 Spring 2008 </h2> 
+
+<ol>
+<h1>Part I - 30 Points</h1>
+
+<li> 4 points<br>
+Why do NUMA systems require operating system support whereas a bus or crossbar architecture does not?
+</li>
+
+<li> 4 points <br>
+Your network requires the ability to address 33,000 hosts. A class
+B network, with a 16-bit host address, has the ability to address
+65,534 hosts. 32,534 potential addresses are hence wasted. Will
+using CIDR instead of a class B address help? Explain how or, if
+not, explain why not.
+</li>
+
+<li> 5 points <br>
+Why might it take a bit longer for a client to open a file under AFS than under NFS?
+</li>
+
+<li> 6 points <br>
+(a) How does CIDR help us from running out of global IP addresses?
+<br>
+(b) How does NAT/PAT help us from running out of global IP addresses?
+<br>
+(c) How does IPv6 help us from running out of global IP addresses?
+</li>
+
+<li> 5 points <br>
+How does AFS provide cache consistency across all clients with cached files?
+</li>
+
+<li> 5 points <br>
+How do RPC systems make a remote function look and feel like a local
+function? Explain the steps undertaken in making a remote procedure
+call.
+</li>
+
+<h1>
+PART II - 60 points - 3 points each </h1>
+<p>
+For each statement, select the most appropriate answer.
+</p>
+
+<li> A snoopy cache eases congestion for which operations?
+        <br>(a) Memory reads.
+        <br>(b) Memory writes.
+        <br>(c) Network receives.
+        <br>(d) Network transmits.
+
+</li><li> Which statement best describes Java RMI's garbage collection?
+        <br>(a)
+A client sends a dirty message to tell a server that a remote reference
+is used, periodically refreshes the dirty message, and finally sends a
+clean message when the object is no longer needed. <br>(b) The server periodically pings a client for a list of remote
+objects that it is referencing. The client responds with the list of
+objects. If it fails to respond or if an object is not in the returned
+list, the server then clears the references. <br>(c) Each time a client creates a reference to a remote object,
+it sends an increment message to the server. Each time the client
+removes a reference, it sends a decrement message. When the reference
+count goes to zero on the server, the object is cleared. <br>(d) An agent is sent from the server to each of the clients with
+a list of remote references on that server. If any of the references
+are no longer used by the client, the agent cleans them up.
+</li><li> TCP is an example of:
+        <br>(a) a virtual circuit protocol.
+        <br>(b) a connectionless protocol.
+        <br>(c) a network layer protocol.
+        <br>(d) all of the above.
+
+</li><li> Ethernet collision is a result of:
+        <br>(a) two nodes on a LAN transmitting simultaneously.
+        <br>(b) two nodes operating without synchronized clocks.
+        <br>(c) two processes within a node attempting to send a packet at the same time.
+        <br>(d) a node transmitting while a router is congested.
+
+</li><li> Which OSI layer is most likely buggy if you're having
+problems with recognizing integers and strings properly in a network
+message? <br>(a) transport (3)
+        <br>(b) session (4)
+        <br>(c) presentation (5)
+        <br>(d) application (6)
+
+</li><li> Which system call associates a local IP address and port with a socket?
+        <br>(a) socket   
+        <br>(b) bind 
+        <br>(c) listen 
+        <br>(d) connect 
+ 
+</li><li> Compared to packet switching, circuit switching is likely to:
+        <br>(a) provide higher bandwidth.
+        <br>(b) result in a more efficient utilization of the network.
+        <br>(c) provide a constant latency.
+        <br>(d) incur more data errors .
+
+</li><li> DCE RPC improved on SUN (ONC) RPC by adding:
+        <br>(a)  an interface definition language.
+        <br>(b)  automatic generation of a unique identifier for the interface.
+        <br>(c)  an interface pointer to support objects.
+        <br>(d)  dynamic selection of TCP or UDP.
+
+</li><li> How is an IP address for a machine related to an ethernet address for that machine?
+        <br>(a) They are the same if using the same network interface.
+        <br>(b) The IP address is derived from the ethernet address.
+        <br>(c) The ethernet address is derived from the IP address.
+        <br>(d) They are not related.
+
+</li><li> How does UDP differ from TCP?
+        <br>(a) UDP is a network layer protocol while TCP is a transport layer protocol.
+        <br>(b) UDP is a connectionless protocol while TCP is connection-oriented.
+        <br>(c) UDP can span multiple networks while TCP cannot. 
+        <br>(d) UDP doesn't require the use of port numbers while TCP does.
+
+</li><li> Traffic policing works by:
+        <br>(a) discarding packets that exceed the allotted bandwidth.
+        <br>(b) discarding packets that are not from a valid source or to a valid destination.
+        <br>(c) queuing packets during peak loads for later retransmission.
+        <br>(d) informing senders when they can or cannot transmit packets.
+
+</li><li> Hard QoS is most likely to employ:
+        <br>(a) traffic prioritization.
+        <br>(b) flow detection.
+        <br>(c) the combination of multiple small packets into one big one.
+        <br>(d) bandwidth reservation.
+
+</li><li> Before you can make a remote procedure call with Sun RPC, you
+need to contact the portmapper by calling the clnt_create function,
+This is an example of: <br>(a) static binding.
+        <br>(b) early binding.
+        <br>(c) late binding.
+        <br>(d) delayed binding.
+
+</li><li> The Domain Name System is responsible for translating:
+        <br>(a) human-readable computer names to IP addresses.
+        <br>(b) IP addresses to ethernet MAC addresses.
+        <br>(c) ethernet MAC addresses to their corresponding IP addresses.
+        <br>(d) internal IP addresses to external IP addresses.
+
+</li><li> An interface definition language is a:
+        <br>(a) way of specifying the names, parameters, and returns of remote procedures.
+        <br>(b) language for coding remote procedures.
+        <br>(c) language used for programming stub functions.
+        <br>(d) definition of data encoding formats over the network.
+
+</li><li> DCE RPC enhanced Sun (ONC) RPC with:
+        <br>(a) the ability to locate the server functions without knowing what server they're on.
+        <br>(b) the ability to pass data structures in addition to basic data types.
+        <br>(c) a pre-compiler to generate stubs.
+        <br>(d) support for the instantiation of objects.
+
+</li><li> Microsoft created Microsoft RPC by enhancing DCE RPC by adding:
+        <br>(a) an interface pointer identifier that identifies the interface for an object on a particular server.
+        <br>(b) the ability to use HTTP GET, POST, PUT, and DELETE operations to perform requests.
+        <br>(c) the ability to define the interface in a WSDL document.
+        <br>(d) dynamic selection of TCP or UDP for communication.
+
+</li><li> SOAP does not help deal with:
+        <br>(a) locating machines hosting remote services.
+        <br>(b) creating requests that can cross firewalls more easily.
+        <br>(c) different data encodings due to different machine architectures and programming languages.
+        <br>(d) invoking methods on remote objects.
+
+</li><li> Which of the following is not a valid NFS function in the original version of NFS?
+        <br>(a) lookup: look up a file name and return a handle to it.
+        <br>(b) mkdir: create a directory.
+        <br>(c) readbytes: read bytes from a file.
+        <br>(d) close: close a file.
+
+</li><li> NFS does not improve performance via:
+        <br>(a) read-ahead.
+        <br>(b) larger-block reads.
+        <br>(c) write-behind.
+        <br>(d) long-term block caching.
+
+
+<h1> PART III - 10 points
+</h1>
+
+<p>
+For each statement, select whether it is true or false.
+</p>
+
+</li><li> A surrogate process in Microsoft DCOM is a server process that instantiates remote object requests.
+        <br> [True]    [False] 
+
+</li><li> Because of its stateless architecture, NFS provides the user with session semantics for file access.
+        <br> [True]    [False] 
+
+</li><li> A snoopy cache monitors memory activity on the system bus to keep its own cache coherent.
+        <br> [True]    [False] 
+
+</li><li> Ethernet's CSMA/CD mechanism allows an ethernet controller to ensure that the packet went out without a collision.
+        <br> [True]    [False] 
+
+</li><li> Nagle's algorithm reduces the number of TCP packets sent by adding new data to an unsent packet.
+        <br> [True]    [False] 
+
+</li><li> ATM differs from IP in that it uses fixed-size packets while IP uses variable-size packets.
+        <br> [True]    [False] 
+
+</li><li> To a client, a DCOM object just looks like a local COM object that happens to use RPC within it.
+        <br> [True]    [False] 
+
+</li><li> CORBA's Internet Inter-ORB protocol (IIOP) defines a network protocol for communicating between clients and servers.
+        <br> [True]    [False] 
+
+</li><li> A stateful file system is needed to support file locking.
+        <br> [True]    [False] 
+
+</li><li> Ethernet is a broadband network since its speeds are generally greater than 10 Mbps.
+        <br> [True]    [False] 
+
+</li></ol>
+
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

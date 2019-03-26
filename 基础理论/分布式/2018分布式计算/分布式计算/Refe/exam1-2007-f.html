@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head>
+<body>
+<h1>Distributed Systems <h1>
+<h2>Exam 1 Fall 2007 <h2> 
+
+<ol>
+<h1>Part I - 30 Points</h1>
+
+<li> 5 points<br>
+What problem was a snoopy cache designed to solve (compared to a
+regular processor cache)?
+</li>
+
+<li> 5 points <br>
+Your network requires the ability to address 500 hosts. A class B
+network, with a 16-bit host address, has the ability to address
+65,534 hosts. 55,034 potential addresses are hence wasted. Will
+using CIDR instead of a class B address help? Explain how or, if
+not, explain why not.
+
+</li><li> 5 points <br>
+Most RPC systems require an interface definition language. Explain
+the purpose of an IDL.
+
+</li><li> 5 points <br>
+Explain what is meant by marshaling and unmarshaling in the context
+of remote procedure calls.
+
+</li><li> 5 points <br>
+Contrast the approach to caching in AFS to that in NFS.
+
+</li><li> 5 points <br>
+AFS is a stateful file system. What state does the server have to maintain?
+
+<h1>
+PART II - 70 points </h1>
+<p>
+For each statement, select the most appropriate answer.
+</p>
+</li><li> A vector (or array) processor is an example of the following architecture:
+        <br>(a) Processor pool.
+        <br>(b) NUMA (non-uniform memory access).
+        <br>(c) SMP (symmetric multiprocessors).
+        <br>(d) SIMD (single instruction, multiple data).
+
+</li><li> The fastest memory interconnect for a massively parallel multiprocessor system is:
+        <br>(a) system bus.
+        <br>(b) crossbar switch.
+        <br>(c) omega network.
+        <br>(d) NUMA (non-uniform memory access).
+
+</li><li> Compared to a baseband network, a broadband network:
+        <br>(a) offers more bandwidth.
+        <br>(b) offers lower latency.
+        <br>(c) allows multiple data streams to be sent at the same time.
+        <br>(d) is better suited to home networking.
+
+</li><li> Sending a packet on an ethernet network relies on:
+        <br>(a) waiting for the network to be free, sending the packet, and then checking for a collision.
+        <br>(b) avoiding collisions by ensuring that only one node transmits at a time.
+        <br>(c) assigning specific time slots during which each node is allowed to transmit.
+        <br>(d) assigning each node a unique frequency for transmitting data.
+
+</li><li> Which layer of the OSI reference model do TCP and UDP occupy?
+        <br>(a) UDP: network layer (3); TCP: transport layer (4).
+        <br>(b) UDP: transport layer (4); TCP: transport layer (4).
+        <br>(c) UDP: network layer (3); TCP: network layer (3).
+        <br>(d) UDP: transport layer (4); TCP: network layer (3).
+
+</li><li> ARP, the Address Resolution Protocol:
+        <br>(a) resolves conflicts if two devices have the same IP address.
+        <br>(b) resolves conflicts if two devices have the same ethernet address.
+        <br>(c) finds the IP address for a given ethernet address.
+        <br>(d) finds the ethernet address for a given IP address.
+
+</li><li> UDP:
+        <br>(a) ensures that packets arrive in the same order they were transmitted.
+        <br>(b) retransmits lost packets.
+        <br>(c) drops packets with corrupt data.
+        <br>(d) none of the above.
+
+</li><li> Which sequence of system calls establishes a connection-oriented socket, names it, sets it for 
+receiving connections, and waits for an incoming connection?
+        <br>(a) connect, bind, listen, accept.
+        <br>(b) socket, bind, recv, accept.
+        <br>(c) connect, biund, recv, listen.
+        <br>(d) socket, bind, listen, accept.
+
+</li><li> Nagle's algorithm:
+        <br>(a) allows a programmer to set bits in an IP header to request a certain level of service.
+        <br>(b) groups related flows of IP packets together at the router.
+        <br>(c) avoids sending lots of small TCP packets.
+        <br>(d) retransmits IP packets at increasing intervals to relieve network congestion.
+
+</li><li> ATM is most accurately described as a network that:
+        <br>(a) employs hard QoS to switch a stream of variable-size packets.
+        <br>(b) employs hard QoS to switch a stream of fixed-size packets.
+        <br>(c) employs soft QoS to switch a stream of variable-size packets.
+        <br>(d) employs soft QoS to switch a stream of fixed-size packets.
+
+</li><li> DCE RPC improved on SUN (ONC) RPC by adding:
+        <br>(a) an interface definition language.
+        <br>(b) a cell directory server.
+        <br>(c) an interface pointer to support objects.
+        <br>(d) dynamic selection of TCP or UDP.
+
+</li><li> Which of the following best describes the distinction between a name and an address?
+        <br>(a) A name is human-friendly; an address is machine-friendly.
+        <br>(b) An address is unique; a name does not have to be unique.
+        <br>(c) An address is a location associated with the name.
+        <br>(d) A name is alphanumeric; an address is numeric.
+
+</li><li> Which is the least accurate statement about SOAP?
+        <br>(a) SOAP is a highly-compact way of representing procedure calls.
+        <br>(b) SOAP passes through content-inspecting firewalls by using HTTP.
+        <br>(c) SOAP uses explicit typing in an XML structure.
+        <br>(d) SOAP integrates with Microsoft .NET remoting.
+
+</li><li> Compared with sequential semantics, session semantics:
+        <br>(a) usually require more network messages.
+        <br>(b) make file locking impossible.
+        <br>(c) make concurrent modifications impossible.
+        <br>(d) make it difficult to do client-side caching.
+</li></ol>
+<p>
+<hr>
+<p>
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

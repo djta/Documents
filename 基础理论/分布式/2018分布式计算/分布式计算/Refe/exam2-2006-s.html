@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 2 Spring 2006 </h2> 
+
+<ol>
+<h1>Part I - 25 Points</h1>
+
+<li> 5 points <br>
+Why is Coda not well suited to hosting a shared database?
+
+</li><li> 6 points <br>
+When does an AFS client get an updated copy of a file that was modified on another system?
+
+</li><li> 6 points <br>
+CIFS supports a SEEK command, which sets the current read/write
+position in the file. NFS does not have this. Is this a deficiency in
+NFS? Explain.
+</li><li> 6 points <br>
+What is <em>false deadlock</em>?
+
+</li><li> 5 points <br>
+What is <em>false sharing</em>?
+
+</li><li> 6 points <br>
+Assign Lamport timestamps to the following events:
+<div class="figure-unframed-center width250">
+<img src="exam2-2006-s-fig1.png" height="85" width="217">
+</div>
+<table>
+<tbody><tr> <td> a. </td> <td width="50"> &nbsp; </td> 
+     <td> d. </td> <td width="50"> &nbsp; </td> </tr>
+<tr> <td> b. </td> <td> &nbsp; </td> 
+     <td> e. </td> <td> &nbsp; </td> </tr>
+<tr> <td> c. </td> <td> &nbsp; </td> 
+     <td> f. </td> <td> &nbsp; </td> </tr>
+</tbody></table>
+
+</li><li> 6 points<br>
+You have a several computers cooperating on a parallel program. CPU
+1 tries to write to page 302, which is currently owned by CPU 0.
+Explain the sequence of operations that takes place.
+
+<h1>Part II - 60 Points</h1>
+
+<p>
+For each statement, select the <i>most</i> appropriate answer.
+</p>
+</li><li> Which of the following is not a valid NFS v3 RPC:
+        <br> ACCESS: check access permissions.
+        <br> CLOSE: close a file.
+        <br> MKNOD: create a special device file.
+        <br> GETATTR: get file attributes.
+</li><li> Oplocks are designed to:
+        <br> control server-side caching.
+        <br> control client-side caching.
+        <br> allow clients to perform advisory file locking.
+        <br> ensure that only one client accesses a file at a time.
+</li><li> The NFS automounter was not designed to:
+        <br> provide a way to offer the same namespace to a set of systems.
+        <br> provide a way to mount all remote resources when the system boots up.
+        <br> mount remote resources on demand.
+        <br> minimize the number of actively mounted remote resources on a system.
+</li><li> Which of the following is not a condition for deadlock?
+        <br> Hold &amp; wait: processes that hold resources can wait for another one.
+        <br> Non-agreement: two or more processes cannot agree on resource allocation.
+        <br> Non-preemption: a resource cannot be revoked from a process that has it.
+        <br> Circular wait: two or more processes are waiting for resources held by one of the others.
+</li><li> Which set of events is concurrent (all events are concurrent with each other)?
+        <br> (3, 1, 5, 7), (3, 2, 6, 7), (2, 1, 6, 8)
+        <br> (2, 1, 3, 4), (2, 2, 3, 3), (3, 3, 2, 5)
+        <br> (1, 2, 3, 4), (2, 3, 4, 5), (3, 4, 5, 6)
+        <br> (1, 5, 6, 7), (1, 4, 5, 7), (1, 3, 2, 2)
+</li><li> After the first phase of a two-phase commit protocol, the coordinator:
+        <br> sent out a query asking whether the cohorts are ready to commit.
+        <br> received responses to the query from all cohorts.
+        <br> sent a request to commit (or abort) but did not receive acknowledgements.
+        <br> received acknowledgements to the commit (or abort) directive.
+</li><li> A linear compensating function adjusts a clock to:
+        <br> tick at constantly decreasing or increasing intervals until synchronization is achieved.
+        <br> compensate for variations in a clock's frequency to make it appear to tick at a constant rate. 
+        <br> tick at a constant faster or slower interval.
+        <br> compensate for sudden changes such as leap seconds and daylight saving time.
+</li><li> A client gets a timestamp of 4:12:30.500 from a time server.
+The elapsed time between the request and response was 20 msec (0.020
+sec). The current time on the client is 4:12:30.510. Using Cristian's
+algorithm, what is the time set to on the client? <br> 4:12:30.480
+        <br> 4:12:30.490
+        <br> 4:12:30.510
+        <br> 4:12:30.520
+</li><li> Which mutual exclusion algorithm is useful when the membership of the group is unknown?
+        <br> Centralized.
+        <br> Lamport's. 
+        <br> Token ring.
+        <br> All of these algorithms require knowledge of all group members.
+</li><li> How does IP multicast achieve reliable packet delivery?
+        <br> It doesn't.
+        <br> Via best-effort multicast.
+        <br> Via atomic multicast.
+        <br> Via IGMP (Internet Group Management Protocol).
+</li><li> A copyset is used:
+        <br> in a DSM system that employs page caching.
+        <br> in a DSM system as an alternative to page caching.
+        <br> to implement lazy release consistency.
+        <br> to implement entry consistency.
+</li><li> Weak consistency models do not allow:
+        <br> read-write operations to the same memory location to be reordered.
+        <br> read-write operations to different memory locations to be reordered
+        <br> delayed writes to cached copies of pages.
+        <br> cached copies of shared memory pages.
+</li></ol>
+
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 2 Spring 2007</h2>
+
+<ol>
+<h1>Part I - 36 Points</h1>
+
+<li> 6 points<br>
+How does a <i>write-ahead log</i> help achieve atomic reliability in a two-phase commit protocol?
+</li>
+
+<li> 6 points <br>
+How is reliability achieved in a reliable multicast protocol?
+</li>
+
+<li> 6 points <br>
+How can Alice pass a symmetric key securely to Bob using public key cryptography?
+</li>
+
+<li> 12 points <br>
+You can synchronize your computer's clock from one of two network time servers using Cristian's algorithm.
+In doing so, you obtain the following data:
+<br>
+<table>
+<tbody><tr>
+<th> &nbsp; </th>
+<th> Server A </th>
+<th> Server B </th>
+</tr>
+<tr>
+<td> Error of clock at server </td><td> ± 4 msec. </td><td> ± 5 msec. </td>
+</tr><tr>
+<td> Best-case round-trip time </td><td> 12 msec. </td><td> 24 msec. </td>
+</tr><tr>
+<td> Timestamp of sending request </td><td> 4:05:15.000 </td><td> 4:06:15.000 </td>
+</tr><tr>
+<td> Timestamp of receiving response </td><td> 4:05:15.022 </td><td> 4:06:15.028 </td>
+</tr><tr>
+<td> Server timestamp received </td><td> 4:06:22.030 </td><td> 4:07:22.030 </td>
+</tr>
+</tbody></table>
+
+<br>
+<br> (a) What is the overall clock error on your system if you synchronize from Server A?
+<br> (b) What is the overall clock error on your system if you synchronize from Server B?
+<br> (c) How much should you advance/retard your system's clock based
+on synchronizing from the server that produces the lowest error?
+Express your answer as a positive or negative number of minutes,
+seconds, and decimal seconds (hh:mm:ss.nnn).
+</li>
+
+<li> 6 points <br>
+How can Alice sign a message that only Bob can validate? The message
+itself is not encrypted; anyone should be able to read it. However,
+only Bob should be able to validate Alice's signature.
+</li>
+
+
+<h1>
+PART II - 64 points </h1>
+<p>
+For each statement, select the <i>most</i> appropriate answer.
+</p>
+
+<li> The purpose of the first phase in a two-phase commit protocol is to:
+        <br>(a)  Send commit/abort directives to all members.
+        <br>(b)  Get a "commit/abort completed" status from all group members.
+        <br>(c)  Get a "ready to commit/abort" status from all group members.
+        <br>(d)  Send "prepare to commit/abort" directives to all group members.
+
+</li><li> Which of the following is not a condition for deadlock?
+        <br>(a)  Mutual exclusion.
+        <br>(b)  Hold-and-wait.
+        <br>(c)  Preemption.
+        <br>(d)  Circular wait.
+
+</li><li> In the Chandy-Misra-Haas deadlock detection algorithm, a process detects a deadlock if:
+        <br>(a)  It receives a probe from the deadlock coordinator.
+        <br>(b)  It receives an acknowledgement to a probe from each process holding resources it needs.
+        <br>(c)  It receives a probe that it originated.
+        <br>(d)  A probe detects that not all processes waiting on resources are older than this process.
+
+</li><li> Comparing two Lamport timestamps, L<sub>1</sub> and L<sub>2</sub>, you can tell that:
+        <br>(a)  If L<sub>1</sub> &lt; L<sub>2</sub> , then <i>event 1</i> happened before <i>event 2</i>.
+        <br>(b)  If <i>event 1</i> happened before <i>event 2</i> then L<sub>1</sub> &lt; L<sub>2</sub> .
+        <br>(c)  If <i>event 1</i> has a causal relationship to <i>event 2</i> and happened before <i>event 2</i> then L<sub>1</sub> &lt; L<sub>2</sub> . 
+        <br>(d)  If L<sub>1</sub> &lt; L<sub>2</sub> , then <i>event 1</i> happened before <i>event 2</i> and is causally related to <i>event 2</i>.
+
+</li><li> Which of the following vector clocks represents a causal series of events?
+        <br>(a)  (2, 1, 4, 3), (2, 1, 4, 4), (2, 2, 4, 3)
+        <br>(b)  (2, 1, 4, 3), (3, 2, 5, 4), (3, 3, 4, 4)
+        <br>(c)  (2, 1, 4, 3), (2, 1, 5, 3), (2, 1, 6, 3)
+        <br>(d)  (2, 1, 4, 3), (3, 2, 4, 4), (4, 2, 3, 4)
+
+</li><li> One way to achieve total ordering in messages is to:
+        <br>(a)  Employ FIFO queues on each process; one for sending and one for receiving messages.
+        <br>(b)  Delay sending a message until the previous message is acknowledged.
+        <br>(c)  Assign Lamport timestamps to each message.
+        <br>(d)  Use a sequence number server.
+
+</li><li> An ethernet address is obtained from an IP class D multicast address via:
+        <br>(a)  The address resolution protocol, ARP.
+        <br>(b)  Copying a subset of the bits of the IP address onto the ethernet address.
+        <br>(c)  A multicast-aware DNS server that can provide a multicast ethernet address for an IP address.
+        <br>(d)  This operation makes no sense; there is no such thing as an ethernet multicast address.
+
+</li><li> Compared with the Ricart &amp; Agrawala mutual exclusion algorithm, Lamport's algorithm:
+        <br>(a)  Does not rely on delayed responses or grant messages in response to a request.
+        <br>(b)  Is a true distributed algorithm.
+        <br>(c)  Does not require reliable multicasting.
+        <br>(d)  Is more fault-tolerant.
+
+</li><li> Election algorithms tend to give false results when:
+        <br>(a)  The network is segmented and one set of nodes becomes separated from another.
+        <br>(b)  The coordinator is dead.
+        <br>(c)  Proper message ordering is not imposed.
+        <br>(d)  Some of the group members are dead.
+
+</li><li> A distributed directory in a distributed shared memory system:
+        <br>(a)  Identifies the nodes that have copies of any given memory page.
+        <br>(b)  Allows a process to translate object IDs to memory locations.
+        <br>(c)  Provides a filesystem interface to the memory system.
+        <br>(d)  Allows a node to query for information on the DSM algorithms in use.
+
+</li><li> A weak consistency model in a distributed shared memory system helps:
+        <br>(a)  Improve performance.
+        <br>(b)  Ensure that all memory operations are processed in sequential order.
+        <br>(c)  Make distributed memory behave exactly like local memory.
+        <br>(d)  All of the above.
+
+</li><li> A memory management unit cannot help with this consistency model:
+        <br>(a)  Weak.
+        <br>(b)  Entry.
+        <br>(c)  Sequential.
+        <br>(d)  Release.
+
+</li><li> In English text, the letter A occurs 8.2% of the time, T
+occurs 9.1%, J occurs 0.05%, and Z occurs 0.074% of the time. If you
+are doing a frequency analysis of ciphertext and see that, in the
+ciphertext, J occurs consistently 8.2% of the time, Z occurs 9.1%, and
+A occurs 0.074% of the time, the cipher used is most likely a: <br>(a)  Transposition cipher.
+        <br>(b)  Monoalphabetic substitution cipher.
+        <br>(c)  Alberti polyalphabetic substitution cipher.
+        <br>(d)  Single-rotor machine.
+
+</li><li> Looking at another large volume of ciphertext, you notice that for the 1<sup>st</sup>, 27<sup>th</sup>, 53<sup>rd</sup>,
+79<sup>th</sup>, etc. characters, Q occurs 8.2% of the time, L occurs 9.1%, and M occurs 0.05% of the time. For the 2<sup>nd</sup>,
+28<sup>th</sup>, 54<sup>th</sup>, 80<sup>th</sup>, etc. characters of the message, G occurs 8.2% of the time, W occurs 9.1% of the
+eime, and B occurs 0.05% of the time. The cipher used is most likely a:
+        <br>(a)  Transposition cipher.
+        <br>(b)  Monoalphabetic substitution cipher.
+        <br>(c)  Alberti polyalphabetic substitution cipher.
+        <br>(d)  Single-rotor machine.
+
+</li><li> What problem does the Diffie-Hellman algorithm solve?
+        <br>(a)  Allowing one party to deliver a secret key to another party.
+        <br>(b)  Avoiding the use of symmetric cryptography by using public and private keys.
+        <br>(c)  Securely establishing a symmetric key between two parties.
+        <br>(d)  Providing an encryption algorithm that is stronger than DES.
+
+</li><li> If you do not use public key cryptography for digital signatures, you will most likely have to:
+        <br>(a)  Rely on hash functions for the signature.
+        <br>(b)  Establish a secure link using the Diffie-Hellman algorithm.
+        <br>(c)  Use a trusted third party that knows everyone's keys.
+        <br>(d)  Use private keys instead of public keys.
+
+
+</li></ol>
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

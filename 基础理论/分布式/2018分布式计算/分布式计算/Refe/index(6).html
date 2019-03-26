@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+ 
+
+
+  
+
+
+<html>
+  <head>
+    
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Web Security - Google Code University - Google Code</title>
+<script type="text/javascript"><!--
+(function(){function a(){this.t={};this.tick=function(c){this.t[c]=(new Date).getTime()};this.tick("start")}var b=new a;window.jstiming={Timer:a,load:b};if(window.external&&window.external.pageT)window.jstiming.pt=window.external.pageT;})();
+
+var _tocPath_ = '/edu/_toc.ezt';
+var codesite_token = '9ec2cfda35b57bbe361bcc9d316cfa7e';
+var logged_in_user_email = 'yang.gang@gmail.com';
+//--></script>
+<link href="/css/codesite.pack.04102009.css" type="text/css" rel="stylesheet"></link>
+<script src="/js/codesite_head.pack.04102009.js" type="text/javascript"></script>
+<script type="text/javascript">CODESITE_CSITimer['load'].tick('bhs');</script>
+<link rel="search" type="application/opensearchdescription+xml" title="Google Code" href="/osd.xml" />
+
+<!--[if IE]><link rel="stylesheet" type="text/css" href="/css/iehacks.css" /><![endif]-->
+
+    <link href="/css/semantic_headers.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="gc-documentation">
+
+    
+    
+    
+</a>
+
+<div id="gb">
+ <span>
+  
+   
+    <b>yang.gang@gmail.com</b>
+    |
+   
+   
+    <a href="/u/yang.gang/" id="projects-dropdown" onclick="return false;">My favorites</a><img width="14" height="14" class="menuIcon off" id="menuIcon-projects-dropdown" src="http://www.gstatic.com/codesite/ph/images/cleardot.gif"/>
+    |
+   
+  
+    <a id="lang-dropdown" class="dropdown" href="/" onclick="return false;"><img width="13" height="13" class="globeicon" src="/images/globe2_small.png"/><span>English</span></a><img width="14" height="14" class="menuIcon off" id="menuIcon-lang-dropdown" src="http://www.gstatic.com/codesite/ph/images/cleardot.gif"/>
+  
+   
+    | <a href="http://www.google.com/accounts/Logout?continue=http%3A%2F%2Fcode.google.com%2Fintl%2Fzh-CN%2Fedu%2Fsecurity%2Findex.html" onclick="CODESITE_click('/gb/sc/signout');">Sign out</a>
+   
+  
+ </span>
+</div>
+
+<div class="gbh" style="left: 0pt;"></div>
+<div class="gbh" style="right: 0pt;"></div>
+
+
+
+<div id="gc-container">
+<a name="top"></a>
+<div id="skipto">
+  <a href="#gc-pagecontent-anchor">Skip to page content</a>
+  <a href="#gc-toc-anchor">Skip to main navigation</a>
+</div>
+
+<div id="gc-header">
+  <div id="logo"><a href="/">
+  
+  
+     <img src="/images/code_logo.png" height="40" width="161" alt="Google Code" style="border:0;margin:3px 0 0 0;"/>
+  
+  
+  </a></div>
+  <div id="search">
+    <div id="searchForm" class="searchForm">
+      <form id="cse" action="http://www.google.com/cse" accept-charset="utf-8" class="gsc-search-box" onsubmit="executeGSearch(document.getElementById('gsearchInput').value); return false;">
+      <noscript>
+      <input type="hidden" name="cref" value="http://code.google.com/cse/googlecode-context.xml"/>
+      </noscript>
+        <table class="gsc-search-box" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gsc-input">
+                <input id="gsearchInput" type="text" name="q" maxlength="2048" class="gsc-input" autocomplete="off" title="Google Code Search" style="width:345px"/>
+              </td>
+              <td class="gsc-search-button">
+                <div id="cs-searchresults" onclick="event.cancelBubble = true;"></div>
+                <input title="Search" id="gsearchButton" class="gsc-search-button" name="sa" value="Search" type="submit"/>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="greytext">e.g. "ajax apis" or "open source"</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div> <!-- end searchForm -->
+  </div> <!-- end search -->
+</div> <!-- end gc-header -->
+
+
+<div id="codesiteContent">
+
+<a name="gc-topnav-anchor"></a>
+<div id="gc-topnav">
+  <h1>Google Code University</h1>
+  <ul id="home" class="gc-topnav-tabs">
+
+    <li id="home_link">
+      <a href="/edu/" class="selected" title="Google Code University home page">Home</a>
+    </li>
+  
+    <li>
+      <a href="http://groups.google.com/group/Google-Code-for-Educators" title="Google Code University developer forum">Group</a>
+    </li>
+  
+
+  </ul>
+</div> <!-- end gc-topnav -->
+
+    <div class="g-section g-tpl-170">
+
+      <a name="gc-toc-anchor"></a>  
+      <div class="g-unit g-first" id="gc-toc">
+        <ul>
+  <li><h2>Courses</h2>
+    <ul>
+      <li><a href="/edu/ajax/index.html" class="tlw-ignore">AJAX Programming</a>
+      </li>
+      <li><a href="/edu/algorithms/index.html">Algorithms</a></li>
+      <li><a href="/edu/parallel/index.html">Distributed Systems</a></li>
+      <li><a href="/edu/security/index.html">Web Security</a></li>
+      <li><a href="/edu/languages/index.html">Languages</a></li>
+    </ul>
+  </li>
+  <li><a href="/edu/tools101/index.html">Tools 101</a></li>
+  <li><a href="/edu/curriculumsearch/">CS Curriculum Search</a></li>
+  <li><a href="/edu/resources/index.html">CS Curriculum Resources</a></li>
+</ul>
+
+        <a class="hidden" href="#gc-topnav-anchor">More Google Code University resource links</a>
+      </div>
+      
+      <a name="gc-pagecontent-anchor"></a>   
+      <div class="g-unit" id="gc-pagecontent">
+        <h1 class="page_title">Web Security</h1>
+
+<style type="text/css">
+
+table.submission {
+  margin-bottom: 2em;
+  border: none;
+}
+
+table.submission td {
+  border: none;
+}
+
+table.submission .logo a img {
+  border: none;
+}
+
+table.submission td.logo {
+  padding-right: 1.5em;
+}
+
+table.submission div.logo {
+  width : 200px;
+  height : 120px;
+}
+
+table.submission td.movie {
+  padding-right: 1.5em
+}
+
+table.submission div.movie {
+  width : 180 px;
+  height : 100px;
+}
+
+table.submission .text {
+}
+
+table.submission .text .title {
+  font-size: medium;
+  font-weight : bold;
+}
+
+table.submission .text .author {
+  color : #676767;
+  margin-bottom : .5em;
+}
+
+table.submission .text .abstract {
+}
+
+table.submission .text .resources a {
+  color : #008000;
+}
+
+
+</style>
+
+    <p>
+    As more and more information is available on the web, securing that data
+    becomes increasingly important to protect users. 
+    </p>
+    <p>
+    <ul>
+      <li><a href="#content">Contributed course content</a></li>
+      <li><a href="#videos">Video lectures</a></li>
+    </ul>
+    <p>
+
+    <h2><a name="content"></a>Contributed Course Content</h2>
+    <p>
+    These course material submissions from industry and academia
+    are designed to help teach web security to students around the world.
+    </p>
+    <br/>
+
+    <!-- Neil Daswani's Foundations of Security -->
+    <table class="submission">
+      <tr>
+        <td class="logo">
+          <div class="logo">
+            <a href="/edu/submissions/daswani/index.html"><img src="http://code.google.com/images/code_sm.png"/></a>
+          </div>
+        </td>
+        <td class="text">
+          <div class="title">
+            <a href="/edu/submissions/daswani/index.html">What Every Web
+              Programmer Needs To Know About Security</a>
+          </div>
+          <div class="author">
+            by Arkajit Dey and Neil Daswani
+          </div>
+          <div class="abstract">
+            This submission contains slides that complement each of the
+            chapters in the book "Foundations of Security: What Every
+            Programmer Needs To Know" for use by instructors and students
+            alike. The slides cover secure design principles, common web
+            application vulnerabilities, an introduction to cryptography, and
+            much more!
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Neil Daswani's Web Security Stuff -->
+    <table class="submission">
+      <tr>
+        <td class="logo">
+          <div class="logo">
+            <a href="/edu/submissions/web_security/listing.html"><img src="http://code.google.com/images/code_sm.png"/></a>
+          </div>
+        </td>
+        <td class="text">
+          <div class="title">
+            <a href="/edu/submissions/web_security/listing.html">Introduction to Web Security</a>
+          </div>
+          <div class="author">
+            by Neil Daswani
+	    <br>Summer 2007
+          </div>
+          <div class="abstract">
+            This submission contains two lectures and a programming
+            assignment that is designed to introduce students to web
+            based security.
+          </div>
+          <div class="resources">
+            <a class="resource" href="/edu/submissions/web_security/listing.html#_lectures">Lectures</a>
+            <span class="spacer">-</span>
+            <a class="resource" href="/edu/submissions/web_security/listing.html#_assignments">Programming Assignments</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+
+    <h2><a name="videos"></a>Video Lectures</h2>
+    <p>
+    These videos are great opportunities for students and faculty to hear
+    directly from some of the current pioneers in high-tech.  They can
+    also potentially serve as "guest lectures" for courses in these areas.
+    </p>
+
+    <ul>
+      <li><a href="#_security_break">How to Break Web Software</a></li>
+      <li><a href="#_security_needtoknow">What Every Engineer Needs to Know About Security and Where to Learn It</a>	</li>
+    </ul>
+    <hr>
+
+<!-- Web Security Videos -->
+
+    <h3><a name="_security_break"></a>How to Break Web Software</h3>
+    <ul>
+      Presenter: Mike Andrews
+      <p>
+        Mike Andrews looks at how web applications are attacked, walks
+        through a testing framework for evaluating the security of an
+        application and takes some deep-dives into a few interesting and
+        common vulnerabilities and how they can be exploited.</p>
+      <br>
+      <embed style="width:400px; height:326px;" id="VideoPlayback" type="application/x-shockwave-flash" src="http://video.google.com/googleplayer.swf?docId=5159636580663884360&hl=en" flashvars="&subtitle=on"> </embed>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h3><a name="_security_needtoknow"></a>What Every Engineer Needs to Know About Web Security and Where to Learn It</h3>
+    <ul>
+        Presenter: Neil Daswani
+        <p>
+        This talk discusses recent trends in security, and what every
+        engineer needs to know to prevent the most significant emerging
+        threats such as cross-site scripting and SQL injection attacks.
+        <p>
+        Just as every engineer might use object-oriented design principles
+        to achieve extensibility and re-usability, every engineer needs
+        to employ principles such as the principle of least privilege,
+        fail-safe stance, and protecting against the weakest link to achieve
+        security. 
+        <p>
+        Instead of focusing on "tips" and "tricks" that allow
+        you to "band-aid" the security of your systems, Neil discusses how to
+        derive defenses based on the application of security principles,
+        such that you can determine how to deal with new threats as they
+        come along or application-specific threats that might be relevant
+        to your domain.
+        <p>
+        Finally, Neil presents some statistics on the current
+        state of software security vulnerabilities, and discusses existing
+        and upcoming challenges in the field of software security. 
+      </p>
+      <br>
+      <embed style="width:400px; height:326px;" id="VideoPlayback" type="application/x-shockwave-flash" src="http://video.google.com/googleplayer.swf?docId=2792231054679782968&hl=en" flashvars=""> </embed>
+    </ul>
+      <br><br>
+   
+      </div><!-- end gc-pagecontent -->
+   </div><!-- end gooey wrapper -->
+
+    </div> <!-- end codesite content -->
+
+<div id="gc-footer" dir="ltr">
+  <div class="text">
+    
+      <div class="notice">Except as otherwise <a
+  href="http://code.google.com/policies.html#restrictions">noted</a>,
+  the content of this page is licensed under the <a rel="license"
+  href="http://creativecommons.org/licenses/by/2.5/">Creative Commons
+  Attribution 2.5 License</a>.</div>
+    
+    &copy;2009 Google -
+    <a href="/">Code Home</a> -
+    <a href="http://www.google.com/accounts/TOS">Terms of Service</a> -
+    <a href="http://www.google.com/privacy.html">Privacy Policy</a> -
+    <a href="/more/">Site Directory</a>
+    <br /> <br />
+    Google Code offered in:
+    <a href="/intl/en/">English</a> -
+    <a href="/intl/es/">Español</a> -
+    <a href="/intl/ja/">日本語</a> -
+    <a href="/intl/ko/">한국어</a> -
+    <a href="/intl/pt-BR/">Português</a> -
+    <a href="/intl/ru/">Pусский</a> -
+    <a href="/intl/zh-CN/">中文(简体)</a> -
+    <a href="/intl/zh-TW/">中文(繁體)</a>
+  </div>
+</div><!-- end gc-footer -->
+
+</div><!-- end gc-containter -->
+
+<script type="text/javascript">CODESITE_CSITimer['load'].tick('ats');</script>
+<script src="/js/codesite_tail.pack.04102009.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

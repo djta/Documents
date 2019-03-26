@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 2 Spring 2008</h2>
+<ol>
+<h1>Part I - 26 Points</h1>
+
+<li> 4 points<br>
+Explain the difference between logical and physical clocks.
+</li>
+
+<li> 4 points <br>
+What problem with Lamport clocks to vector clocks solve?
+</li>
+
+<li> 3 points <br>
+A client's clock reads 3:20:00. The server's clock reads 3:10:00
+when they synchronize using the Berkeley algorithm. Assume message
+delays are negligible. What is the time at the client after
+synchronization?
+</li>
+
+<li> 3 points <br>
+A client's clock reads 3:20:00. The server's clock reads 3:10:00
+when they synchronize using Cristian's algorithm. Assume message
+delays are negligible. What is the time at the client after
+synchronization?
+</li>
+
+<li> 6 points <br>
+Some networks, such as cable TV Internet service, provide an
+asymmetric bandwidth. For example, a cable modem may provide 12
+Mbps downstream service but only 1 Mbps upstream. Cristian's algorithm
+assumes symmetric delays to and from the server.
+<br>
+(a) Reformulate the algorithm to accommodate asymmetric delays,
+where T<sub>S</sub> is the server's time, T<sub>a</sub> is the time the request was sent,
+T<sub>b</sub> is the time the response was received, U is the upstream bandwidth,
+and D is the downstream bandwidth.
+<br>
+(b) You are on a network with a 9 Mbps downstream bandwidth and a
+1 Mbps upstream bandwidth. Your client makes a request at 9:10:00.0
+and gets a response 200 msec later. If the time on the server is
+8:42:00.0, what would the time be set to on your client?
+<br>
+[Note that 1000 msec = 1 sec; time is expressed as HH:MM:SS.msec]
+</li>
+
+<li> 5 points <br>
+Explain how Alice can send a digitally-signed document to Bob and
+Charles such that only Bob and Charles can read the message and
+only Charles can validate the signature. You cannot replicate the
+document (assume it's huge and you wouldn't want to). Use a combination
+of public key and symmetric cryptography but no trusted third party
+in your solution.
+</li>
+
+<h1>
+PART II - 63 points - 3 points each </h1>
+<p>
+For each statement, select the most appropriate answer.
+</p>
+
+<li> The Coda distributed file system does not support:
+        <br>(a) Tokens for file locking.
+        <br>(b) Disconnected clients.
+        <br>(c) Replicated servers.
+        <br>(d) Session semantics.
+
+</li><li> The purpose of DFS tokens is to:
+        <br>(a) Give the server control over which actions clients can perform and how they may cache data.
+        <br>(b) Ensure mutual exclusion is granted when servers are accessed.
+        <br>(c) Support read/write replication on servers through token exchange.
+        <br>(d) To avoid the overhead of having clients cache file data.
+
+</li><li> SMB is best characterized as a:
+        <br>(a) Remote call, connection-oriented file system.
+        <br>(b) Remote call, connectionless file system.
+        <br>(c) File upload/download, connectionless file system.
+        <br>(d) File upload/download, connection-oriented file system.
+
+</li><li> Opportunistic locks, or  oplocks:
+        <br>(a) Tell the client how it may cache file data and attributes.
+        <br>(b) Are a first-come, first-served mechanism for locking a file.
+        <br>(c) Allow clients to grab locks on a remote file under CIFS.
+        <br>(d) Guarantee exclusive access to a file once it is open.
+
+</li><li> Alice has a remote file open on her system with a Level 1
+oplock. Bob tries to open the file from another system. The most likely
+scenario is: <br>(a) Alice's oplock will be revoked and Bob will be able to share the file.
+        <br>(b) Bob's request will fail.
+        <br>(c) Bob will be blocked until Alice releases her lock.
+        <br>(d) Alice's oplock will be revoked and she will no longer have access to the file.
+
+</li><li> Which of the following is not a valid description of the ACID properties of transactions?
+        <br>(a)
+Atomic: If a transaction cannot complete in its entirety, a subset of
+its operations may be visible as long as they are performed in a serial
+order. <br>(b) Consistent: Invariants must hold after the transaction.
+        <br>(c)
+Isolated: If two or more transactions are running at the same time, the
+final result appears as if all transactions run sequentially. <br>(d) Durable: once a transaction commits, the results are made permanent.
+
+</li><li> At the end of the first phase of a two-phase commit protocol:
+        <br>(a) The coordinator has asked all cohorts if they have completed the transaction.
+        <br>(b) The coordinator has delivered all the prepare to commit requests to all cohorts.
+        <br>(c) The coordinator has received all agree or abort responses to a prepare to commit request.
+        <br>(d) The coordinator delivered a commit or abort directive to all cohorts.
+
+</li><li> The two-phase commit protocol is an example of:
+        <br>(a) An atomic multicast.
+        <br>(b) A reliable multicast.
+        <br>(c) A causally-ordered multicast.
+        <br>(d) An unreliable multicast.
+
+</li><li> A synchronization subnet is:
+        <br>(a) The collection of NTP servers on the Internet.
+        <br>(b) An IP multicast group used for clock synchronization
+        <br>(c) The set of machines addressed by an NTP server operating in multicast mode
+        <br>(d) The set of NTP servers with which you are currently synchronizing.
+
+</li><li> IP multicast uses:
+        <br>(a) Unreliable multicast.
+        <br>(b) Reliable multicast.
+        <br>(c) Atomic multicast.
+        <br>(d) User-selectable reliability.
+
+</li><li> False sharing in a distributed shared memory system arises because:
+        <br>(a) Unrelated data is shared between multiple systems but resides on the same memory page.
+        <br>(b) One distribute memory page is mapped onto two or more systems at the same time.
+        <br>(c) Two or more distributed memory pages are mapped onto the same system.
+        <br>(d) Bad message ordering makes it appear that data is shared when, in reality, it is not.
+
+</li><li> A distributed directory in a distributed shared memory system:
+        <br>(a) Ensures cache coherence in a sequentially coherent memory system.
+        <br>(b) Allows concurrent queries and updates to a memory page.
+        <br>(c) Is necessary for systems that employ caching.
+        <br>(d) Distributes the load of looking up page owners.
+
+</li><li> Concurrency control deals with:
+        <br>(a) A distributed monitoring system that allows the control of processes on different nodes.
+        <br>(b) Starting and stopping processes on a collection of computers.
+        <br>(c) Taking a sequential process and breaking it into a collection of processes to maximize concurrency.
+        <br>(d) Running processes concurrently while giving the results that would be obtained through serial execution.
+
+</li><li> Compared to two-phase locking, strict two-phase locking:
+        <br>(a) Relies on a lock manager.
+        <br>(b) Avoids having transactions read uncommitted data.
+        <br>(c) Does not allow a transaction to get new locks after it has released a lock. 
+        <br>(d) Is vulnerable to cascading aborts.
+
+</li><li> The ring election algorithm works by:
+        <br>(a) Having all nodes in a ring of processors send a message to a coordinator who will elect the leader.
+        <br>(b) Sending a token around a set of nodes. Whoever has the token is the coordinator.
+        <br>(c) Sending a message around all available nodes and choosing the first one on the resultant list.
+        <br>(d) Building a list of all live nodes and choosing the largest numbered node in the list.
+
+</li><li> Which event is concurrent with the vector clock (2, 8, 4)?
+        <br>(a) (3, 9, 5)
+        <br>(b) (3, 8, 4)
+        <br>(c) (1, 7, 3)
+        <br>(d)  (4, 8, 2)
+
+</li><li> The Diffie-Hellman algorithm is:
+        <br>(a) A public key cipher .
+        <br>(b) A symmetric cipher.
+        <br>(c) A substitution cipher.
+        <br>(d) Not an encryption algorithm.
+
+</li><li> Which statement about the Vigen?re ciphers is not true?
+        <br>(a) It is a block cipher that uses a secret key.
+        <br>(b) It is a polyalphabetic substitution cipher.
+        <br>(c) It is a collection of C?sar ciphers.
+        <br>(d) It attempts to be resilient  to frequency analysis.
+
+</li><li> A hybrid cryptosystem uses:
+        <br>(a) A combination of public key and symmetric cryptography.
+        <br>(b) A combination of substitution and transposition ciphers.
+        <br>(c) Multiple layers of encryption.
+        <br>(d) Any of the above.
+
+</li><li> The Ricart &amp; Agrawala distributed mutual exclusion algorithm is:
+        <br>(a) More efficient and more fault tolerant than a centralized algorithm.
+        <br>(b) More efficient but less fault tolerant than a centralized algorithm.
+        <br>(c) Less efficient but more fault tolerant than a centralized algorithm.
+        <br>(d) Less efficient and less fault tolerant than a centralized algorithm.
+
+<h1>
+PART III - 11 points
+</h1>
+<p>
+For each statement, select whether it is true or false.
+</p>
+</li><li> The Simple Network Time Protocol (SNTP) uses Cristian's algorithm for synchronization.
+        <br> [True]    [False] 
+
+</li><li> With other things being equal, a lower stratum is preferable to a high one in NTP.
+        <br> [True]    [False] 
+
+</li><li> Resolution is a client-initiated operation in Coda to bring replicated volumes in sync.
+        <br> [True]    [False] 
+
+</li><li> A Level 1 oplock allows a client to cache file attributes and delay writes to the server.
+        <br> [True]    [False] 
+
+</li><li> Hoarding is a way a user to control the Coda cache on the client.
+        <br> [True]    [False] 
+
+</li><li> Split brain refers to a situation where an election algorithm that elects two coordinators.
+        <br> [True]    [False] 
+
+</li><li> DES is a block cipher.
+        <br> [True]    [False] 
+
+</li><li> Berkeley's xFS is a distributed file system with no central servers.
+        <br> [True]    [False] 
+
+</li><li> A private workspace (and shadow blocks) is used to simplify aborts and keep operations isolated during a transaction.
+        <br> [True]    [False] 
+
+</li><li> There are less than 256 valid keys for the C?sar cipher.
+        <br> [True]    [False] 
+
+</li><li> A hash function is a form of a restricted cipher.
+        <br> [True]    [False] 
+
+
+</li></ol>
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

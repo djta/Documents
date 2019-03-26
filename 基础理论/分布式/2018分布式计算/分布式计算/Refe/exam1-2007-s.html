@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 1 Spring 2007 </h2> 
+
+<ol>
+<h1>Part I - 44 Points</h1>
+
+<li> 9 points<br>
+As more and more people got access to the Internet, we weren't really running out of IP 
+addresses in the 1990s even though most everyone said we were.
+        <br> (a) What was happening?
+        <br> (b) How did CIDR help?
+        <br> (c) How did NAT help?
+</li>
+
+<li> 5 points <br>
+What is the purpose of the server-side stub in remote procedure calls?
+
+</li><li> 6 points <br>
+How did DCE RPC offer more flexibility in client-server applications than Sun (ONC) RPC?
+
+</li><li> 6 points <br>
+What two mechanisms does Microsoft ORPC/DCOM use to ensure that unreferenced remote 
+objects are cleaned up?
+        <br> 1.
+        <br> 2.
+
+</li><li> 6 points <br>
+CIFS supports a SEEK command. NFS does not. Is this a deficiency in NFS? Explain.
+
+</li><li> 6 points <br>
+What's the major reason that AFS can scale to support a huge number of clients?
+
+</li><li> 6 points <br>
+Unlike NFS, AFS is a stateful file system. Explain the kind of state that the server needs to 
+maintain.
+
+</li><li> 6 points [OPTIONAL - EXTRA CREDIT]
+You create a directory on an NFS system and get an error that the file already exists even 
+though it didn't exist earlier and nobody created one in the interim. When you check, the 
+directory you created does indeed exist. Explain what might have happened.
+
+<h1>
+PART II - 56 points </h1>
+<p>
+For each statement, select the most appropriate answer.
+</p>
+</li><li> Intel's Tera-scale processor prototype consists of 80 cores. Intel proposes a "3D die stack"
+memory interface, where each core has 256 Mbits of SRAM attached directly to it and other cores 
+can access it via a 2D mesh interconnect network. This interconnect is best categorized as:
+        <br>(a) bus.
+        <br>(b) crossbar.
+        <br>(c) omega network.
+        <br>(d) NUMA (non-uniform memory access).
+
+</li><li> Unlike a simple write-through cache, a snoopy cache:
+        <br>(a) ensures that cache contents remain coherent with main memory.
+        <br>(b) ensures that main memory is coherent with cache contents.
+        <br>(c) can work on a switched interconnect.
+        <br>(d) is faster for both read and write operations.
+
+</li><li> A single system image is:
+        <br>(a) software that makes a collection of machines appear as one system.
+        <br>(b) software that uses distributed mutual exclusion to run on only one machine at a time.
+        <br>(c) a hardware interconnect to allow any processor to communicate with any other one.
+        <br>(d) tightly coupled software running on tightly coupled hardware. 
+
+</li><li> Ethernet sends a packet onto the network by:
+        <br>(a) waiting for the network to be clear and then checking that the it went out without a collision.
+        <br>(b) waiting for a predetermined timeslot to ensure that no other node transmits concurrently 
+and causes a collision.
+        <br>(c) transmitting on a unique frequency band that no other node is using for transmission.
+        <br>(d) transmitting immediately and then checking that it went out without a collision. 
+
+</li><li> Which layer of the OSI protocol stack is responsible for managing the movement of data from one 
+application to another?
+        <br>(a) Data Link (2).
+        <br>(b) Network (3).
+        <br>(c) Transport (4).
+        <br>(d) Presentation (5).
+
+</li><li> Transferring an IP packet on an Ethernet network relies on:
+        <br>(a) IP-capable ethernet controllers.
+        <br>(b) nothing; IP and ethernet packets can coexist on the same network.
+        <br>(c) packet encapsulation.
+        <br>(d) CSMA/CD. 
+
+</li><li> Which of the following is not an attempt to help with managing efficient use of the network?
+        <br>(a) Flow detection.
+        <br>(b) Nagle's algorithm.
+        <br>(c) Differentiated services.
+        <br>(d) TCP packet retransmission.
+
+</li><li> Which of these is the most likely scenario when contacting a DNS server to look up an IP domain 
+name?
+        <br>(a) The server forwards the request to a root name sever.
+        <br>(b) The server returns the address of one or more root servers.
+        <br>(c) The server forwards the request to all other connected servers.
+        <br>(d) The server returns the address of another server that may know the answer.
+
+</li><li> The part of RPC (remote procedure calls) that is responsible for converting between the network 
+and native machine formats of the data being sent is part of this OSI layer:
+        <br>(a) Transport (4).
+        <br>(b) Session (5).
+        <br>(c) Presentation (6).
+        <br>(d) Application (7).
+
+</li><li> Which of the following RPC systems does not require a separate interface definition language?
+        <br>(a) Sun (ONC) RPC.
+        <br>(b) DCE RPC.
+        <br>(c) Microsoft ORPC.
+        <br>(d) Java RMI.
+
+</li><li> How does Microsoft ORPC/DCOM handle cleaning up unreferenced objects on the server if 
+reference counting fails?
+        <br>(a) All remaining unreferenced objects are cleaned up when the client exists.
+        <br>(b) All remaining unreferenced objects are cleaned up when the server process exits.
+        <br>(c) The server periodically pings the client to see if it is still alive.
+        <br>(d) The client periodically pings the server.
+
+</li><li> Microsoft ORPC enhanced DCE RPC with:
+        <br>(a) an interface-definition language.
+        <br>(b) use of XML for marshaling data.
+        <br>(c) a standard network data representation to support different architectures.
+        <br>(d) support for object/interface identifiers.
+
+</li><li> The purpose of Microsoft's oplocks (opportunistic locks) is to:
+        <br>(a) allow distributed processes to negotiate a mandatory file and record locks on a remote file.
+        <br>(b) allow distributed processes to request an advisory file and record locks on a remote file.
+        <br>(c) allow the first process that accesses a remote file to get a lock for it.
+        <br>(d) tell the client what file data it can cache.
+
+</li><li> Berkeley's xFS distributed file system project is unique in that it:
+        <br>(a) uses an upload/download model.
+        <br>(b) does not use TCP for connectivity.
+        <br>(c) gives the user a choice between session and sequential semantics.
+        <br>(d) does not use on a central file server.
+</li></ol>
+<p>
+<hr>
+<p>
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

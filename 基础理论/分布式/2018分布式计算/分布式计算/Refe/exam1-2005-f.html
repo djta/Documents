@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head>
+<body>
+
+<h1> Distributed Systems </h1>
+<h2>Fall 2005</h2>
+
+<ol>
+<h1>Part I - 40 Points</h1>
+
+<li> 7 points<br>
+You need to set up a network of 40,000 machines on the Internet.
+Using class-based addressing, you would need a class B network. Its
+16-bit host address will allow addressing over 65,000 hosts, leading
+to over 25,000 unused addresses. Will CIDR help? If yes, explain
+how. If not, explain why not.
+
+
+</li><li>7 points <br>
+In what way does the operating system have to play a role in a NUMA
+(Non-Uniform Memory Access) architecture?
+
+
+</li><li>6 points<br>
+How does DCE RPC add an extra layer of transparency over Sun (ONC) RPC?
+
+
+</li><li>6 points<br>
+What is the purpose of a port number in TCP and UDP?
+
+
+</li><li>6 points<br>
+Explain the purpose of an IDL in RPC.
+
+
+</li><li>6 points<br>
+(a) What is an advantage of late binding over early binding?
+<br><sp>
+(b) What is an advantage of early binding over late binding?
+
+</sp><h1>Part II - 60 Points</h1>
+
+For each statement, select the <i>most</i> appropriate answer.
+
+</li><li> A serializable class in Java:
+        <br>(a) guarantees that an object is reference by only one thread at a time.
+        <br>(b) ensures that valid remote references can be created for that object.
+        <br>(c) allows remote object references to be registered with the rmiregistry name server.
+        <br>(d) ensures that the object can be marshaled into a network message.
+
+</li><li> A TCP header does not contain a
+        <br>(a) checksum.
+        <br>(b) sequence number.
+        <br>(c) timestamp.
+        <br>(d) source port.
+
+</li><li> The portmapper under Sun (ONC) RPC:
+        <br>(a) allocates ports to server processes that host RPC functions.
+        <br>(b) allocates ports to clients that use RPC.
+        <br>(c) maps external port numbers to internal ones to allow Internet access to RPC services.
+        <br>(d) allows clients that use RPC to look up the port number of a server that hosts RPC functions.
+
+</li><li> Which answer most accurately reflects the positions of TCP and UDP on the OSI protocol stack:
+        <br>(a) TCP: network (layer 3) UDP: network (layer 3).
+        <br>(b) TCP: network (layer 3) UDP: transport (layer 4).
+        <br>(c) TCP: transport (layer 4) UDP: network (layer 3).
+        <br>(d) TCP: transport (layer 4) UDP: transport (layer 4).
+
+</li><li> The Address Resolution Protocol (ARP):
+        <br>(a) finds the IP address corresponding to a host name.
+        <br>(b) finds the MAC (e.g., ethernet) address corresponding to an IP address.
+        <br>(c) resolves the route to the destination host.
+        <br>(d) finds the IP address corresponding to a MAC (e.g., ethernet) address.
+
+</li><li> Which of the following is not true about Microsoft ORPC?
+        <br>(a) It uses an interface definition language.
+        <br>(b) Clients send requests to increment a remote reference.
+        <br>(c) Servers periodically send a ping set of all remote references to the client.
+        <br>(d) It supports an interface pointer identifier.
+
+</li><li> DCE RPC enhanced Sun (ONC) RPC by:
+        <br>(a) Introducing remote reference counting.
+        <br>(b) Adding support for objects.
+        <br>(c) Introducing a unique ID number to identify remote services.
+        <br>(d) Using XML to marshal requests.
+
+</li><li> How does ARP ensure that responses to ARP queries come from the proper host?
+        <br>(a) The query is sent only to the proper machine.
+        <br>(b) The query is made over an encrypted connection.
+        <br>(c) The response contains a checksum.
+        <br>(d) There is no mechanism to ensure that the response comes from the proper host.
+
+</li><li> Microsoft .NET does not use:
+        <br>(a) XIDL (eXtensible Interface Definition Language)
+        <br>(b) SOAP (Simple Object Access Protocol)
+        <br>(c) WSDL (Web Service Definition Language)
+        <br>(d) HTTP (Hypertext Transport Protocol)
+
+</li><li> Which of the following addresses does not belong to the network 1.15.8.0/22?
+        <br>(a) 1.15.10.5
+        <br>(b) 1.15.11.101
+        <br>(c) 1.15.9.15
+        <br>(d) 1.15.12.2
+
+</li><li> The Domain Name Service (DNS):
+        <br>(a) finds the IP address corresponding to a host name.
+        <br>(b) finds the MAC (e.g., ethernet) address corresponding to an IP address..
+        <br>(c) resolves the route to the destination host.
+        <br>(d) finds the IP address corresponding to a MAC (e.g., ethernet) address.
+
+</li><li> TCP provides the following advantage over UDP:
+        <br>(a) It consumes fewer resources by not maintaining connection state.
+        <br>(b) It regulates the rate at which packets enter the network to reduce congestion.
+        <br>(c) It sends the source address and port number so the to identify the origin of the packet.
+        <br>(d) It provides a mechanism to retransmit missing or dropped packets.
+
+</li></ol>
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

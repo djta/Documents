@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 2 Spring 2005 </h2> 
+
+<ol>
+<h1>Part I - 40 Points</h1>
+
+<li> 8 points<br>
+Explain the two techniques that ethernet cards employ to support multicast.
+<br><sp>
+1.
+<br><sp>
+2.
+
+
+</sp></sp></li><li>8 points <br>
+(a) How does read-ahead help improve remote file system performance?
+
+(b) When does read-ahead not improve remote file system performance?
+
+
+</li><li>5 points<br>
+Explain what is meant by a stateless file system.
+
+
+</li><li>5 points<br>
+Why may opening a file under Coda be less efficient than under AFS?
+
+
+</li><li>5 points<br>
+Explain <i>reliable multicast</i>.
+
+
+</li><li>9 points<br>
+When its clock reads 3:42:07.100, a client sends a time request
+message to a server and gets a response back at 3:42:07.125. The
+response contains a server timestamp of 3:42:07.125.
+
+(a) Using Cristian's algorithm, to what value does the client set its clock?
+
+(b) If the best-case round-trip time is 20 msec., what is the error
+of the synchronized clock? [N.B.: 1000 msec = 1 second]
+
+(c) If the clock was last synchronized 1000 seconds ago, what is
+the drift based on your synchronization (in milliseconds per second)?
+
+<h1>Part II - 60 Points</h1>
+
+For each statement, select the <i>most</i> appropriate answer.
+
+</li><li> A serializable class in Java:
+        <br>(a) guarantees that an object is reference by only one thread at a time.
+        <br>(b) ensures that valid remote references can be created for that object.
+        <br>(c) allows remote object references to be registered with the rmiregistry name server.
+        <br>(d) ensures that the object can be marshaled into a network message.
+
+
+
+</li><li>       Compared to a remote procedure model, an upload/download model is more likely to:
+        <br>(a) provide session semantics.
+        <br>(b) use a stateless architecture.
+        <br>(c) use remote procedure calls.
+        <br>(d) be implemented as a separate file system type on the client.
+
+</li><li>       Which of the following is not a remote procedure call under NFS?
+        <br>(a) write (write to a file)
+        <br>(b) close (close a file)
+        <br>(c) mkdir (create a directory)
+        <br>(d) statfs (get information for the file system)
+
+</li><li>       Which statement is not accurate about AFS?
+        <br>(a) AFS provides session semantics. 
+        <br>(b) AFS volumes can issue referrals when a resource moves.
+        <br>(c) AFS does not consume disk space on the client.
+        <br>(d) AFS resources are allocated in units called volumes.
+
+</li><li>       Which statement is not accurate about Coda?
+        <br>(a) Replicated servers constitute a volume storage group.
+        <br>(b) Coda supports session semantics.
+        <br>(c) File updates are logged to a client modification log when a client is disconnected.
+        <br>(d) Replicated servers initiate a resolution process to synchronize their contents.
+
+</li><li>       Tokens in DFS (AFS version 3):
+        <br>(a) allow the server to control caching behavior on clients.
+        <br>(b) represent resources and are circulated from machine to machine.
+        <br>(c) allow a machine to ensure that all other machines are alive.
+        <br>(d) provide a way to meter traffic to the server.
+
+</li><li>       A persistent write-ahead log is important for:
+        <br>(a) providing an audit trail.
+        <br>(b) optimizing remote file system access.
+        <br>(c) ensuring that a transaction remembers its state even upon reboot.
+        <br>(d) allowing a client to play back file operations upon reconnection.
+
+</li><li>       The wait-die algorithm:
+        <br>(a) detects deadlock by having nodes send resource usage information to a coordinator.
+        <br>(b) detects deadlock by sending a probe message prior to requesting a resource.
+        <br>(c) does not allow a younger process to take resources held by an older one.
+        <br>(d) allows a process to wait for a resource to become free and then kill itself if the resource does not become available.
+
+</li><li>       Lamport timestamps can easily be modified to:
+        <br>(a) provide global ordering.
+        <br>(b) provide total ordering.
+        <br>(c) detect concurrency among events.
+        <br>(d) provide proper ordering among causally related events.
+
+</li><li>       Which mutual exclusion algorithm does not require group members to know all the members of the group?
+        <br>(a) Centralized
+        <br>(b) Token ring
+        <br>(c) Ricart &amp; Agrawala
+        <br>(d) Lamport
+
+</li><li> What is an efficient and scalable way for a node to find all
+cached copies of a given page in a distributed shared memory system? <br>(a)    Centralized directory
+        <br>(b) Distributed directory
+        <br>(c) Multicast page query
+        <br>(d) Broadcast page query
+
+</li><li>       Entry consistency:
+        <br>(a) is the opposite of release consistency: changes are propagated in the acquire phase.
+        <br>(b) propagates invalidations and updates anytime after the release phase.
+        <br>(c) cannot use the memory management unit effectively to detect changes to memory.
+        <br>(d) must be implemented for release consistency to work properly.
+
+</li><li>       A more practical approach to global time ordering is:
+        <br>(a) sync ordering.
+        <br>(b) total ordering.
+        <br>(c) causal ordering.
+        <br>(d) local ordering.
+</li></ol>
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 3 Fall 2007</h2>
+<ol>
+<h1>Part I - 36 Points</h1>
+
+<li> 7 points<br>
+What is a nonce and how can Alice authenticate Bob using a nonce?
+Use public key cryptography; assume that everyone has everyone's public keys.
+</li>
+
+<li> 6 points <br>
+Alice wants to talk to Bob using Kerberos. How does Alice give Bob a session key securely?
+</li>
+
+<li> 6 points <br>
+How does steganography differ from cryptography?
+</li>
+
+<li> 8 points <br>
+When you set up an environment with a DMZ, identify which classes
+of machines belong in the following networks (put an X in the
+appropriate boxes):
+<table>
+<tbody><tr>
+<th> type of machine </th>
+<th> Directly on Internet </th>
+<th> DMZ network </th>
+<th> Internal network</th>
+</tr>
+<tr>
+<th> Application proxies </th>
+<td> &nbsp; </td>
+<td> &nbsp; </td>
+<td> &nbsp; </td>
+</tr>
+<tr>
+<th> Servers with no associated application proxies </th>
+<td> &nbsp; </td>
+<td> &nbsp; </td>
+<td> &nbsp; </td>
+</tr>
+<tr>
+<th> Servers with associated application proxies </th>
+<td> &nbsp; </td>
+<td> &nbsp; </td>
+<td> &nbsp; </td>
+</tr>
+<tr>
+<th> Generic user machines </th>
+<td> &nbsp; </td>
+<td> &nbsp; </td>
+<td> &nbsp; </td>
+</tr>
+</tbody></table>
+</li>
+
+<li> 9 points <br>
+There is, no doubt, something that you have studied and is not on
+this exam. Come up with a question that you feel would be appropriate
+for this exam and answer it.
+<br>
+Question:
+<br>
+Answer:
+</li>
+
+<h1>
+PART II - 64 points - 4 points each </h1>
+<p>
+For each statement, select the most appropriate answer.
+</p>
+
+<li> Differing from simple resource locking, two-phase locking:
+        <br>(a) allows two processes to negotiate for a lock.
+        <br>(b) ensures reliable locking by having all members acknowledge the lock request.
+        <br>(c) uses a write-ahead log.
+        <br>(d) ensures that the effect of serial execution is preserved.
+
+</li><li> In contrast to two-phase locking, strict two-phase locking:
+        <br>(a) has a well-defined growing phase and a shrinking phase.
+        <br>(b) sends a lock request to all cohorts and does not proceed until it gets all responses.
+        <br>(c) relies on a centralized lock manager.
+        <br>(d) avoids cascading aborts by having a resource hold all locks until the end.
+
+</li><li> TCP/IP deals with fault tolerance through:
+        <br>(a) information redundancy.
+        <br>(b) physical redundancy.
+        <br>(c) triple modular redundancy.
+        <br>(d) time redundancy.
+
+</li><li> To handle the fail-silent failure of one component in a k component system, you need:
+        <br>(a) k - 1 components.
+        <br>(b) (k + 1) 2 components.
+        <br>(c) k2 components.
+        <br>(d) k+1 components.
+
+</li><li> SSL (Secure Sockets Layer) achieves authentication using a technique in common with:
+        <br>(a) Password authentication.
+        <br>(b) Skey authentication.
+        <br>(c) SecurID tokens.
+        <br>(d) SKID2/SKID3.
+
+</li><li> Alice wants to talk with Bob and uses Kerberos authentication. The sealed envelope she gets is:
+        <br>(a) encrypted with Bob's secret key.
+        <br>(b) encrypted with Alice's secret key.
+        <br>(c) encrypted with the session key.
+        <br>(d) encrypted with Bob's public key.
+
+</li><li> An X.509 digital certificate contains:
+        <br>(a) a user's public key encrypted with the certification authority's private key.
+        <br>(b) a user's unencrypted public key signed with the certification authority's private key.
+        <br>(c) a user's unencrypted public key and private key encrypted with the certification authority's private key.
+        <br>(d) a user's private key encrypted with the certification authority's public key.
+
+</li><li> CAPTCHA is used to:
+        <br>(a) normalize a user's biometric to facilitate pattern matching.
+        <br>(b) authenticate a user and establish a session key.
+        <br>(c) authenticate a specific user.
+        <br>(d) identify a user as a human being.
+
+</li><li> Relying on an intruder's inability to validate a digital signature is the basis of:
+        <br>(a) CAPTCHA.
+        <br>(b) a null cipher.
+        <br>(c) chaffing and winnowing.
+        <br>(d) digital certificates.
+
+</li><li> A stateful packet inspecting firewall is needed to guard against:
+        <br>(a) someone trying to connect to the web server port on your mail server system.
+        <br>(b) SYN flooding attacks within your network.
+        <br>(c) incorrect HTTP requests that are attempts to compromise your web server.
+        <br>(d) packets from the outside that are masqueraded to appear as if they're from local machines.
+
+</li><li> The main idea behind IP tunneling is:
+        <br>(a) rewriting source and destination addresses in an IP header.
+        <br>(b) encrypting the data of an IP packet.
+        <br>(c) encapsulating IP packets within other IP packets.
+        <br>(d) redirecting IP traffic to a different port number.
+
+</li><li> An application restart from a checkpointed state is known as a:
+        <br>(a) cold failover.
+        <br>(b) warm failover.
+        <br>(c) hot failover.
+        <br>(d) cascading failover.
+
+</li><li> Load balancing is not useful for:
+        <br>(a) planned outage management.
+        <br>(b) application failover.
+        <br>(c) fault tolerance.
+        <br>(d) increased performance.
+
+</li><li> A ROC plot for a biometric device helps you:
+        <br>(a) assess the accuracy of using the biometric for authentication.
+        <br>(b) identify the trade-off of robustness versus distinctiveness.
+        <br>(c) identify the trade-off of time versus pattern matching performance.
+        <br>(d) see how many iterations of signal processing are needed to achieve a good match.
+
+</li><li> A rootkit is:
+        <br>(a) designed to hide files or modify the behavior of an operating system.
+        <br>(b) a comprehensive set of hacker tools to allow one to try to get access to a system.
+        <br>(c)
+a program that exploits a bug in the operating system or in an
+application that gives you administrative access (root) on a system. <br>(d) software that detects malicious software on your system.
+
+</li><li> A hypervisor does not:
+        <br>(a) receive system interrupts.
+        <br>(b) translate system calls from user programs to ones that make sense on the host operating system.
+        <br>(c) control access to the memory management unit.
+        <br>(d) intercept privileged instructions.
+</li></ol>
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

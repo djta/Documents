@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+</head><body>
+<h1>Distributed Systems</h1>
+<h2>Exam 2 Fall 2005 </h2> 
+
+<ol>
+<h1>Part I - 50 Points</h1>
+
+<li> 9 points<br>
+Explain how cached data on the client is invalidated:
+<br><sp>
+(a) in NFS.
+<br><sp>
+(b) in AFS.
+
+
+</sp></sp></li><li>8 points <br>
+Explain the two methods available in ethernet cards for receiving select multicast
+packets (rather than all multicast packets).
+<br><sp>
+1.
+<br><sp>
+2.
+
+
+</sp></sp></li><li>18 points<br>
+In a distributed shared memory system (DSM):
+<br><sp>
+(a) How do you detect that your system is attempting to access a page that resides on another host?
+<br><sp>
+(a) How do you determine which host has the page you need?
+<br><sp>
+(a) Why may sequential consistency be undesirable in the implementation of a DSM system?
+
+
+</sp></sp></sp></li><li>8 points<br>
+(a) Alice and Bob walked a mile from town when Bob realized that
+he forgot to set his watch. Alice volunteers to walk back to town
+to find the correct time from the clock tower. When she comes back,
+a half-hour later, she tells Bob, "The time on the clock tower was
+3:15." Using Cristians algorithm, to what time does Bob set his
+watch?
+
+(b) After Bob sets his watch, Alice confesses that she briefly
+stopped to eat a doughnut when she was in town. Bob knows that Alice
+walks at a relatively steady pace of three miles per hour. What
+assumption can he make about the error of the time on his watch (±N
+minutes)?
+
+
+</li><li>8 points<br>
+Explain two deficiencies with Lamport timestamps and how each can be rectified.
+<br><sp>
+(a)
+<br><sp>
+(b)
+
+</sp></sp><h1>Part II - 50 Points</h1>
+
+For each statement, select the <i>most</i> appropriate answer.
+
+</li><li>       The NFS automounter did not:
+        <br>(a) eliminate the need to mount NFS resources; remote resources can be accessed directly via RPC.
+        <br>(b) eliminate excessive delays due to NFS mounts during system boot.
+        <br>(c) provide a mechanism to support replicated servers for read-only resources.
+        <br>(d) allow clients to share a common namespace of NFS resources.
+
+</li><li>       Microsoft oplocks:
+        <br>(a) improve file system performance by allowing clients to cache file data.
+        <br>(b) allow a client to lock an entire file for exclusive access.
+        <br>(c) allow a client to lock a byte-range of a file for exclusive access.
+        <br>(d) enforce mutual exclusion for file access.
+
+</li><li>       Microsoft's SMB distributed file system architecture is most similar to:
+        <br>(a) RPC access with sequential semantics.
+        <br>(b) RPC access with session semantics.
+        <br>(c) Upload/download access with sequential semantics.
+        <br>(d) Upload/download access with session semantics.
+
+</li><li>       Which mutual exclusion algorithm does not rely on timestamps?
+        <br>(a) Central-server.
+        <br>(b) Ricart-Agrawala.
+        <br>(c) Lamport.
+        <br>(d) They all require timestamps.
+
+</li><li>       Which of the following is not suitable for group communication?
+        <br>(a) Anycast.
+        <br>(b) Multicast.
+        <br>(c) Netcast.
+        <br>(d) Broadcast.
+
+</li><li>       A persistent write-ahead log is important for:
+        <br>(a) providing an audit trail.
+        <br>(b) optimizing remote file system access.
+        <br>(c) ensuring that a transaction remembers its state even upon reboot.
+        <br>(d) allowing a client to play back file operations upon reconnection.
+
+</li><li>       A linear compensating function:
+        <br>(a) speeds up or slows down the rate at which a clock ticks.
+        <br>(b) adjusts a clock in steadily decreasing intervals until it asymptotically approaches the correct time.
+        <br>(c) adds a constant offset to the value of the system clock.
+        <br>(d) compensates for the irregularities of a quartz oscillator and ensures that the system clock ticks at a constant rate.
+
+</li><li>       At the end of the first phase of a two-phase commit protocol:
+        <br>(a) all cohorts have received a request to commit from the coordinator.
+        <br>(b) the coordinator received an acknowledgement to its request from all cohorts.
+        <br>(c) all cohorts have received a commit or abort directive from the coordinator.
+        <br>(d) the coordinator received all responses from cohorts to the commit or abort directive.
+
+</li><li>       When a replicated Coda file server is rebooted:
+        <br>(a) it checks with other servers for updates.
+        <br>(b) it waits for other servers to contact it with updates.
+        <br>(c) it waits for a client to tell it that it has an old version of a file.
+        <br>(d) it waits for the client to play back its client modification log.
+
+</li><li>       Which vector timestamp is concurrent with (1,0)?
+        <br>(a) (0,0)
+        <br>(b) (0,1)
+        <br>(c) (1,1)
+        <br>(d) All of the above.
+
+</li></ol>
+
+<p>
+<hr>
+<p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<h1> Distributed Systems </h1>
+<h2>Exam 1 Spring 2006 </h2> 
+
+<ol>
+<h1>Part I - 25 Points</h1>
+
+<li> 3 points<br>
+What is an advantage of <em>early</em> over <em>late</em> binding?
+
+</li><li>2 points <br>
+What problems did cache memory cause in the design of multiprocessor systems?
+
+</li><li>4 points<br>
+Explain the two mechanisms that the snoopy cache added to rectify these 
+problems.
+<br>
+1.
+<br>
+2.
+
+</li><li>6 points<br>
+(a) How did CIDR help with the problem of running out of IP addresses?
+<p>
+(b) How did NAT help with the problem of running out of IP addresses?
+
+</p></li><li>6 points<br>
+(a) Explain the problem of passing a pointer to the root of a binary
+tree as a parameter to a remote procedure call.
+<p>
+(b) How can this be handled in an RPC system? Be sure to explain
+how the called function gets a pointer.
+
+</p></li><li>4 points<br>
+Explain the purpose of a surrogate process in Microsoft DCOM.
+
+<h1>Part II - 75 Points</h1>
+
+<p>
+For each statement, select the <i>most</i> appropriate answer.
+</p>
+
+</li><li> Multiprocessor systems are characterized by:
+        <br>(a) shared memory.
+        <br>(b) a high-speed processor-to-processor interconnect.
+        <br>(c) a crossbar switch.
+        <br>(d) All of the above.
+
+</li><li> Ethernet is best characterized as:
+        <br>(a) a packet-based baseband network.
+        <br>(b) a packet-based broadband network.
+        <br>(c) a virtual-circuit-based baseband network.
+        <br>(d) a virtual-circuit-based broadband network.
+
+</li><li> A snoopy cache reduces bus traffic for:
+        <br>(a) memory read operations.
+        <br>(b) both memory read and write operations.
+        <br>(c) memory write operations.
+        <br>(d) neither memory read nor write operations.
+
+</li><li> The portmapper under Sun (ONC) RPC:
+        <br>(a) allocates ports to server processes that host RPC functions.
+        <br>(b) allocates ports to clients that use RPC.
+        <br>(c) maps external port numbers to internal ones to allow Internet access to RPC services.
+        <br>(d) allows clients that use RPC to look up the port number of a server that hosts RPC functions.
+
+</li><li> You have 100 machines in your network. How many IP addresses
+are saved (i.e., not wasted) by switching to a CIDR /25 network instead
+of a class C (/24) network? <br>(a)     None (0).
+        <br>(b) 26.
+        <br>(c) 128.
+        <br>(d) 154.
+
+</li><li> The Address Resolution Protocol (ARP):
+        <br>(a) ﬁnds the IP address corresponding to a host name.
+        <br>(b) ﬁnds the MAC (e.g., ethernet) address corresponding to an IP address.
+        <br>(c) resolves the route to the destination host.
+        <br>(d) ﬁnds the IP address corresponding to a MAC (e.g., ethernet) address.
+
+</li><li> Which of the following does not address quality of service for packet delivery on an IP network?
+        <br>(a) Differentiated services (Diff-Serv) using the ToS field of an IP header.
+        <br>(b) RTP (Real-Time Transport Protocol).
+        <br>(c) IP flow detection in routers.
+        <br>(d) RSVP (ReserVation Protocol).
+
+</li><li> Which of the following best describes how an ethernet controller sends packets onto the network?
+        <br>(a) It transmits whenever it is has data and then checks whether there was a collision with another transmitter.
+        <br>(b) It transmits only within its prescribed time slot, thus avoiding collisions with other transmitters.
+        <br>(c) It arbitrates for exclusive access to the network and then transmits the packet.
+        <br>(d)
+It checks the network for traffic and, when free, attempts to transmit
+and then checks if the transmission succeeded without interference.
+</li><li> Select the most accurate statement about TCP and UDP. 
+        <br>(a) TCP is a transport layer (4) protocol while UDP is a network layer (3) protocol.
+        <br>(b) UDP causes data to be transmitted over the network in packets while TCP sends a data stream over a pre-established circuit.
+        <br>(c) TCP contains software to ensure packets are delivered to the application in-order while UDP does not.
+        <br>(d) UDP is a user-level service while TCP resides in the kernel.
+
+</li><li> A protocol control block (PCB):
+        <br>(a) Selects the
+appropriate network protocol for an incoming packet based on the local
+address, local port, foreign address, and foreign port. <br>(b) directs data to the appropriate socket based on a
+combination of source address, source port, destination address, and
+destination port. <br>(c)       provides a layer of abstraction that makes socket-based communication network-agnostic.
+        <br>(d) ensures in-order delivery by indexing data by local address, local port, foreign addres, and foreign port.
+
+</li><li> Which of the following addresses does not belong to the network 2.12.4.0/18?
+        <br>(a) 2.12.3.12
+        <br>(b) 2.12.7.1
+        <br>(c) 2.12.8.121
+        <br>(d) 2.12.10.6
+
+</li><li> What is the primary use of a DNS referral?
+        <br>(a) Managing addresses of systems that have moved outside the domain.
+        <br>(b) Managing addresses of systems that have moved within the domain.
+        <br>(c) Translating between aliases of machine names and the actual name.
+        <br>(d) Identifying a name server that is closer to the requested domain.
+
+</li><li> Which of the following tasks is not the responsibility of an IP driver?
+        <br>(a) Routing packets.
+        <br>(b) Fragmenting packets.
+        <br>(c) Dropping expired packets.
+        <br>(d) Receiving packets from the network interface.
+
+</li><li> The Domain Name Service (DNS):
+        <br>(a) finds the IP address corresponding to a host name.
+        <br>(b) finds the MAC (e.g., ethernet) address corresponding to an IP address..
+        <br>(c) resolves the route to the destination host.
+        <br>(d) finds the IP address corresponding to a MAC (e.g., ethernet) address.
+
+</li><li> DCE enhanced Sun (ONC) RPC by adding:
+        <br>(a) an interface definition language.
+        <br>(b) a centralized name server.
+        <br>(c) an interface pointer identifier.
+        <br>(d) support for polymorphism.
+
+</li></ol>
+<p>
+<hr>
+<p>
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img
+  alt="Creative Commons License" style="border-width: 0pt;" src="cc88x31.png"></a><br>
+
+Except as otherwise noted, the content of this presentation is
+licensed under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+Creative Commons Attribution 2.5 License.
+</a>
+</p>
+</body></html>
